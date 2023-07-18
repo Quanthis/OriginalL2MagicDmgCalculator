@@ -67,6 +67,8 @@ namespace OriginalL2MagicDmgCalculator
             this.NUKE_LEVEL_LABEL = new System.Windows.Forms.Label();
             this.NUKE_TYPE_LABEL = new System.Windows.Forms.Label();
             this.SKILLS_LABEL = new System.Windows.Forms.Label();
+            this.SIGIL_EQUIPED_LABEL = new System.Windows.Forms.Label();
+            this.VALAKAS_EQUIPED_LABEL = new System.Windows.Forms.Label();
             this.CHARACTER_STATS_GROUP.SuspendLayout();
             this.EQUIPMENT_GROUP.SuspendLayout();
             this.BUFFS_GROUP.SuspendLayout();
@@ -173,6 +175,8 @@ namespace OriginalL2MagicDmgCalculator
             // EQUIPMENT_GROUP
             // 
             this.EQUIPMENT_GROUP.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.EQUIPMENT_GROUP.Controls.Add(this.VALAKAS_EQUIPED_LABEL);
+            this.EQUIPMENT_GROUP.Controls.Add(this.SIGIL_EQUIPED_LABEL);
             this.EQUIPMENT_GROUP.Controls.Add(this.WEAPON_MATAK_LABEL);
             this.EQUIPMENT_GROUP.Controls.Add(this.EQUIPMENT_LABEL);
             this.EQUIPMENT_GROUP.ForeColor = System.Drawing.Color.White;
@@ -437,6 +441,24 @@ namespace OriginalL2MagicDmgCalculator
             this.SKILLS_LABEL.TabIndex = 0;
             this.SKILLS_LABEL.Text = "SKILLS";
             // 
+            // SIGIL_EQUIPED_LABEL
+            // 
+            this.SIGIL_EQUIPED_LABEL.AutoSize = true;
+            this.SIGIL_EQUIPED_LABEL.Location = new System.Drawing.Point(11, 80);
+            this.SIGIL_EQUIPED_LABEL.Name = "SIGIL_EQUIPED_LABEL";
+            this.SIGIL_EQUIPED_LABEL.Size = new System.Drawing.Size(106, 20);
+            this.SIGIL_EQUIPED_LABEL.TabIndex = 2;
+            this.SIGIL_EQUIPED_LABEL.Text = "Sigil_Equiped";
+            // 
+            // VALAKAS_EQUIPED_LABEL
+            // 
+            this.VALAKAS_EQUIPED_LABEL.AutoSize = true;
+            this.VALAKAS_EQUIPED_LABEL.Location = new System.Drawing.Point(11, 120);
+            this.VALAKAS_EQUIPED_LABEL.Name = "VALAKAS_EQUIPED_LABEL";
+            this.VALAKAS_EQUIPED_LABEL.Size = new System.Drawing.Size(134, 20);
+            this.VALAKAS_EQUIPED_LABEL.TabIndex = 3;
+            this.VALAKAS_EQUIPED_LABEL.Text = "Valakas_Equiped";
+            // 
             // HOME
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -503,6 +525,8 @@ namespace OriginalL2MagicDmgCalculator
         private System.Windows.Forms.Label HERO_BERS_LABEL;
         private System.Windows.Forms.Label WEAPON_MASTERY_LEVEL_LABEL;
         private System.Windows.Forms.Label WEAPON_MATAK_LABEL;
+        private System.Windows.Forms.Label VALAKAS_EQUIPED_LABEL;
+        private System.Windows.Forms.Label SIGIL_EQUIPED_LABEL;
     }
 }
 
