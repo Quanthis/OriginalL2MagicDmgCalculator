@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace OriginalL2MagicDmgCalculator
 {
-    public partial class Form1 : Form
+    public partial class HOME : Form
     {
-        public Form1()
+        public HOME()
         {
             InitializeComponent();
         }

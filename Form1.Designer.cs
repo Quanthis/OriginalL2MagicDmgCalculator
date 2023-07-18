@@ -1,7 +1,7 @@
 ﻿
 namespace OriginalL2MagicDmgCalculator
 {
-    partial class Form1
+    partial class HOME
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace OriginalL2MagicDmgCalculator
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HOME));
             this.CHARACTER_STATS_GROUP = new System.Windows.Forms.Panel();
             this.ATTRIBUTE_LABEL = new System.Windows.Forms.Label();
             this.CLASS_LABEL = new System.Windows.Forms.Label();
@@ -41,8 +41,10 @@ namespace OriginalL2MagicDmgCalculator
             this.CHARACTER_STATS_LABEL = new System.Windows.Forms.Label();
             this.vScrollBar1 = new System.Windows.Forms.VScrollBar();
             this.EQUIPMENT_GROUP = new System.Windows.Forms.Panel();
+            this.WEAPON_MATAK_LABEL = new System.Windows.Forms.Label();
             this.EQUIPMENT_LABEL = new System.Windows.Forms.Label();
             this.BUFFS_GROUP = new System.Windows.Forms.Panel();
+            this.HERO_BERS_LABEL = new System.Windows.Forms.Label();
             this.BUFF_POWER_LABEL6 = new System.Windows.Forms.Label();
             this.BUFF_POWER_LABEL5 = new System.Windows.Forms.Label();
             this.BUFF_POWER_LABEL4 = new System.Windows.Forms.Label();
@@ -57,6 +59,7 @@ namespace OriginalL2MagicDmgCalculator
             this.BUFF_NAME_LABEL1 = new System.Windows.Forms.Label();
             this.BUFFS_LABEL = new System.Windows.Forms.Label();
             this.SKILLS_GROUP = new System.Windows.Forms.Panel();
+            this.WEAPON_MASTERY_LEVEL_LABEL = new System.Windows.Forms.Label();
             this.NUKE_ELE_ALIGN = new System.Windows.Forms.Label();
             this.NUKE_ENCHANT_POWER_LABEL = new System.Windows.Forms.Label();
             this.NUKE_ENCHANT_TYPE_LABEL = new System.Windows.Forms.Label();
@@ -64,7 +67,6 @@ namespace OriginalL2MagicDmgCalculator
             this.NUKE_LEVEL_LABEL = new System.Windows.Forms.Label();
             this.NUKE_TYPE_LABEL = new System.Windows.Forms.Label();
             this.SKILLS_LABEL = new System.Windows.Forms.Label();
-            this.HERO_BERS_LABEL = new System.Windows.Forms.Label();
             this.CHARACTER_STATS_GROUP.SuspendLayout();
             this.EQUIPMENT_GROUP.SuspendLayout();
             this.BUFFS_GROUP.SuspendLayout();
@@ -171,12 +173,22 @@ namespace OriginalL2MagicDmgCalculator
             // EQUIPMENT_GROUP
             // 
             this.EQUIPMENT_GROUP.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.EQUIPMENT_GROUP.Controls.Add(this.WEAPON_MATAK_LABEL);
             this.EQUIPMENT_GROUP.Controls.Add(this.EQUIPMENT_LABEL);
             this.EQUIPMENT_GROUP.ForeColor = System.Drawing.Color.White;
             this.EQUIPMENT_GROUP.Location = new System.Drawing.Point(152, 86);
             this.EQUIPMENT_GROUP.Name = "EQUIPMENT_GROUP";
             this.EQUIPMENT_GROUP.Size = new System.Drawing.Size(397, 239);
             this.EQUIPMENT_GROUP.TabIndex = 1;
+            // 
+            // WEAPON_MATAK_LABEL
+            // 
+            this.WEAPON_MATAK_LABEL.AutoSize = true;
+            this.WEAPON_MATAK_LABEL.Location = new System.Drawing.Point(11, 40);
+            this.WEAPON_MATAK_LABEL.Name = "WEAPON_MATAK_LABEL";
+            this.WEAPON_MATAK_LABEL.Size = new System.Drawing.Size(118, 20);
+            this.WEAPON_MATAK_LABEL.TabIndex = 1;
+            this.WEAPON_MATAK_LABEL.Text = "Weapon M. Atk";
             // 
             // EQUIPMENT_LABEL
             // 
@@ -209,6 +221,15 @@ namespace OriginalL2MagicDmgCalculator
             this.BUFFS_GROUP.Name = "BUFFS_GROUP";
             this.BUFFS_GROUP.Size = new System.Drawing.Size(390, 239);
             this.BUFFS_GROUP.TabIndex = 2;
+            // 
+            // HERO_BERS_LABEL
+            // 
+            this.HERO_BERS_LABEL.AutoSize = true;
+            this.HERO_BERS_LABEL.Location = new System.Drawing.Point(11, 212);
+            this.HERO_BERS_LABEL.Name = "HERO_BERS_LABEL";
+            this.HERO_BERS_LABEL.Size = new System.Drawing.Size(128, 20);
+            this.HERO_BERS_LABEL.TabIndex = 13;
+            this.HERO_BERS_LABEL.Text = "Heroic Berserker";
             // 
             // BUFF_POWER_LABEL6
             // 
@@ -330,6 +351,7 @@ namespace OriginalL2MagicDmgCalculator
             // SKILLS_GROUP
             // 
             this.SKILLS_GROUP.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.SKILLS_GROUP.Controls.Add(this.WEAPON_MASTERY_LEVEL_LABEL);
             this.SKILLS_GROUP.Controls.Add(this.NUKE_ELE_ALIGN);
             this.SKILLS_GROUP.Controls.Add(this.NUKE_ENCHANT_POWER_LABEL);
             this.SKILLS_GROUP.Controls.Add(this.NUKE_ENCHANT_TYPE_LABEL);
@@ -342,6 +364,15 @@ namespace OriginalL2MagicDmgCalculator
             this.SKILLS_GROUP.Name = "SKILLS_GROUP";
             this.SKILLS_GROUP.Size = new System.Drawing.Size(398, 198);
             this.SKILLS_GROUP.TabIndex = 3;
+            // 
+            // WEAPON_MASTERY_LEVEL_LABEL
+            // 
+            this.WEAPON_MASTERY_LEVEL_LABEL.AutoSize = true;
+            this.WEAPON_MASTERY_LEVEL_LABEL.Location = new System.Drawing.Point(175, 40);
+            this.WEAPON_MASTERY_LEVEL_LABEL.Name = "WEAPON_MASTERY_LEVEL_LABEL";
+            this.WEAPON_MASTERY_LEVEL_LABEL.Size = new System.Drawing.Size(149, 20);
+            this.WEAPON_MASTERY_LEVEL_LABEL.TabIndex = 7;
+            this.WEAPON_MASTERY_LEVEL_LABEL.Text = "Weapon Mastery Lv";
             // 
             // NUKE_ELE_ALIGN
             // 
@@ -406,16 +437,7 @@ namespace OriginalL2MagicDmgCalculator
             this.SKILLS_LABEL.TabIndex = 0;
             this.SKILLS_LABEL.Text = "SKILLS";
             // 
-            // HERO_BERS_LABEL
-            // 
-            this.HERO_BERS_LABEL.AutoSize = true;
-            this.HERO_BERS_LABEL.Location = new System.Drawing.Point(11, 212);
-            this.HERO_BERS_LABEL.Name = "HERO_BERS_LABEL";
-            this.HERO_BERS_LABEL.Size = new System.Drawing.Size(128, 20);
-            this.HERO_BERS_LABEL.TabIndex = 13;
-            this.HERO_BERS_LABEL.Text = "Heroic Berserker";
-            // 
-            // Form1
+            // HOME
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -428,7 +450,7 @@ namespace OriginalL2MagicDmgCalculator
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.Name = "Form1";
+            this.Name = "HOME";
             this.Text = "L2 Magic Dmg Calculator by Quan";
             this.CHARACTER_STATS_GROUP.ResumeLayout(false);
             this.CHARACTER_STATS_GROUP.PerformLayout();
@@ -479,6 +501,8 @@ namespace OriginalL2MagicDmgCalculator
         private System.Windows.Forms.Label BUFF_NAME_LABEL4;
         private System.Windows.Forms.Label BUFF_NAME_LABEL3;
         private System.Windows.Forms.Label HERO_BERS_LABEL;
+        private System.Windows.Forms.Label WEAPON_MASTERY_LEVEL_LABEL;
+        private System.Windows.Forms.Label WEAPON_MATAK_LABEL;
     }
 }
 
