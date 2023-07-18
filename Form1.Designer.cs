@@ -43,15 +43,28 @@ namespace OriginalL2MagicDmgCalculator
             this.EQUIPMENT_GROUP = new System.Windows.Forms.Panel();
             this.EQUIPMENT_LABEL = new System.Windows.Forms.Label();
             this.BUFFS_GROUP = new System.Windows.Forms.Panel();
+            this.BUFF_POWER_LABEL6 = new System.Windows.Forms.Label();
+            this.BUFF_POWER_LABEL5 = new System.Windows.Forms.Label();
+            this.BUFF_POWER_LABEL4 = new System.Windows.Forms.Label();
+            this.BUFF_POWER_LABEL3 = new System.Windows.Forms.Label();
+            this.BUFF_POWER_LABEL2 = new System.Windows.Forms.Label();
+            this.BUFF_NAME_LABEL6 = new System.Windows.Forms.Label();
+            this.BUFF_NAME_LABEL5 = new System.Windows.Forms.Label();
+            this.BUFF_NAME_LABEL4 = new System.Windows.Forms.Label();
+            this.BUFF_NAME_LABEL3 = new System.Windows.Forms.Label();
+            this.BUFF_NAME_LABEL2 = new System.Windows.Forms.Label();
+            this.BUFF_POWER_LABEL1 = new System.Windows.Forms.Label();
+            this.BUFF_NAME_LABEL1 = new System.Windows.Forms.Label();
             this.BUFFS_LABEL = new System.Windows.Forms.Label();
             this.SKILLS_GROUP = new System.Windows.Forms.Panel();
-            this.SKILLS_LABEL = new System.Windows.Forms.Label();
-            this.NUKE_TYPE_LABEL = new System.Windows.Forms.Label();
-            this.NUKE_LEVEL_LABEL = new System.Windows.Forms.Label();
-            this.NUKE_POWER_LABEL = new System.Windows.Forms.Label();
-            this.NUKE_ENCHANT_TYPE_LABEL = new System.Windows.Forms.Label();
-            this.NUKE_ENCHANT_POWER_LABEL = new System.Windows.Forms.Label();
             this.NUKE_ELE_ALIGN = new System.Windows.Forms.Label();
+            this.NUKE_ENCHANT_POWER_LABEL = new System.Windows.Forms.Label();
+            this.NUKE_ENCHANT_TYPE_LABEL = new System.Windows.Forms.Label();
+            this.NUKE_POWER_LABEL = new System.Windows.Forms.Label();
+            this.NUKE_LEVEL_LABEL = new System.Windows.Forms.Label();
+            this.NUKE_TYPE_LABEL = new System.Windows.Forms.Label();
+            this.SKILLS_LABEL = new System.Windows.Forms.Label();
+            this.HERO_BERS_LABEL = new System.Windows.Forms.Label();
             this.CHARACTER_STATS_GROUP.SuspendLayout();
             this.EQUIPMENT_GROUP.SuspendLayout();
             this.BUFFS_GROUP.SuspendLayout();
@@ -133,7 +146,7 @@ namespace OriginalL2MagicDmgCalculator
             // LEVEL_LABEL
             // 
             this.LEVEL_LABEL.AutoSize = true;
-            this.LEVEL_LABEL.Location = new System.Drawing.Point(7, 40);
+            this.LEVEL_LABEL.Location = new System.Drawing.Point(11, 40);
             this.LEVEL_LABEL.Name = "LEVEL_LABEL";
             this.LEVEL_LABEL.Size = new System.Drawing.Size(46, 20);
             this.LEVEL_LABEL.TabIndex = 2;
@@ -160,7 +173,7 @@ namespace OriginalL2MagicDmgCalculator
             this.EQUIPMENT_GROUP.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.EQUIPMENT_GROUP.Controls.Add(this.EQUIPMENT_LABEL);
             this.EQUIPMENT_GROUP.ForeColor = System.Drawing.Color.White;
-            this.EQUIPMENT_GROUP.Location = new System.Drawing.Point(163, 86);
+            this.EQUIPMENT_GROUP.Location = new System.Drawing.Point(152, 86);
             this.EQUIPMENT_GROUP.Name = "EQUIPMENT_GROUP";
             this.EQUIPMENT_GROUP.Size = new System.Drawing.Size(397, 239);
             this.EQUIPMENT_GROUP.TabIndex = 1;
@@ -177,12 +190,133 @@ namespace OriginalL2MagicDmgCalculator
             // BUFFS_GROUP
             // 
             this.BUFFS_GROUP.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.BUFFS_GROUP.Controls.Add(this.HERO_BERS_LABEL);
+            this.BUFFS_GROUP.Controls.Add(this.BUFF_POWER_LABEL6);
+            this.BUFFS_GROUP.Controls.Add(this.BUFF_POWER_LABEL5);
+            this.BUFFS_GROUP.Controls.Add(this.BUFF_POWER_LABEL4);
+            this.BUFFS_GROUP.Controls.Add(this.BUFF_POWER_LABEL3);
+            this.BUFFS_GROUP.Controls.Add(this.BUFF_POWER_LABEL2);
+            this.BUFFS_GROUP.Controls.Add(this.BUFF_NAME_LABEL6);
+            this.BUFFS_GROUP.Controls.Add(this.BUFF_NAME_LABEL5);
+            this.BUFFS_GROUP.Controls.Add(this.BUFF_NAME_LABEL4);
+            this.BUFFS_GROUP.Controls.Add(this.BUFF_NAME_LABEL3);
+            this.BUFFS_GROUP.Controls.Add(this.BUFF_NAME_LABEL2);
+            this.BUFFS_GROUP.Controls.Add(this.BUFF_POWER_LABEL1);
+            this.BUFFS_GROUP.Controls.Add(this.BUFF_NAME_LABEL1);
             this.BUFFS_GROUP.Controls.Add(this.BUFFS_LABEL);
             this.BUFFS_GROUP.ForeColor = System.Drawing.Color.White;
             this.BUFFS_GROUP.Location = new System.Drawing.Point(719, 86);
             this.BUFFS_GROUP.Name = "BUFFS_GROUP";
             this.BUFFS_GROUP.Size = new System.Drawing.Size(390, 239);
             this.BUFFS_GROUP.TabIndex = 2;
+            // 
+            // BUFF_POWER_LABEL6
+            // 
+            this.BUFF_POWER_LABEL6.AutoSize = true;
+            this.BUFF_POWER_LABEL6.Location = new System.Drawing.Point(191, 182);
+            this.BUFF_POWER_LABEL6.Name = "BUFF_POWER_LABEL6";
+            this.BUFF_POWER_LABEL6.Size = new System.Drawing.Size(114, 20);
+            this.BUFF_POWER_LABEL6.TabIndex = 12;
+            this.BUFF_POWER_LABEL6.Text = "M.Atk % Boost";
+            // 
+            // BUFF_POWER_LABEL5
+            // 
+            this.BUFF_POWER_LABEL5.AutoSize = true;
+            this.BUFF_POWER_LABEL5.Location = new System.Drawing.Point(191, 152);
+            this.BUFF_POWER_LABEL5.Name = "BUFF_POWER_LABEL5";
+            this.BUFF_POWER_LABEL5.Size = new System.Drawing.Size(114, 20);
+            this.BUFF_POWER_LABEL5.TabIndex = 11;
+            this.BUFF_POWER_LABEL5.Text = "M.Atk % Boost";
+            // 
+            // BUFF_POWER_LABEL4
+            // 
+            this.BUFF_POWER_LABEL4.AutoSize = true;
+            this.BUFF_POWER_LABEL4.Location = new System.Drawing.Point(191, 122);
+            this.BUFF_POWER_LABEL4.Name = "BUFF_POWER_LABEL4";
+            this.BUFF_POWER_LABEL4.Size = new System.Drawing.Size(114, 20);
+            this.BUFF_POWER_LABEL4.TabIndex = 10;
+            this.BUFF_POWER_LABEL4.Text = "M.Atk % Boost";
+            // 
+            // BUFF_POWER_LABEL3
+            // 
+            this.BUFF_POWER_LABEL3.AutoSize = true;
+            this.BUFF_POWER_LABEL3.Location = new System.Drawing.Point(191, 92);
+            this.BUFF_POWER_LABEL3.Name = "BUFF_POWER_LABEL3";
+            this.BUFF_POWER_LABEL3.Size = new System.Drawing.Size(114, 20);
+            this.BUFF_POWER_LABEL3.TabIndex = 9;
+            this.BUFF_POWER_LABEL3.Text = "M.Atk % Boost";
+            // 
+            // BUFF_POWER_LABEL2
+            // 
+            this.BUFF_POWER_LABEL2.AutoSize = true;
+            this.BUFF_POWER_LABEL2.Location = new System.Drawing.Point(191, 62);
+            this.BUFF_POWER_LABEL2.Name = "BUFF_POWER_LABEL2";
+            this.BUFF_POWER_LABEL2.Size = new System.Drawing.Size(114, 20);
+            this.BUFF_POWER_LABEL2.TabIndex = 8;
+            this.BUFF_POWER_LABEL2.Text = "M.Atk % Boost";
+            // 
+            // BUFF_NAME_LABEL6
+            // 
+            this.BUFF_NAME_LABEL6.AutoSize = true;
+            this.BUFF_NAME_LABEL6.Location = new System.Drawing.Point(11, 182);
+            this.BUFF_NAME_LABEL6.Name = "BUFF_NAME_LABEL6";
+            this.BUFF_NAME_LABEL6.Size = new System.Drawing.Size(114, 20);
+            this.BUFF_NAME_LABEL6.TabIndex = 7;
+            this.BUFF_NAME_LABEL6.Text = "Buff Full Name";
+            // 
+            // BUFF_NAME_LABEL5
+            // 
+            this.BUFF_NAME_LABEL5.AutoSize = true;
+            this.BUFF_NAME_LABEL5.Location = new System.Drawing.Point(11, 152);
+            this.BUFF_NAME_LABEL5.Name = "BUFF_NAME_LABEL5";
+            this.BUFF_NAME_LABEL5.Size = new System.Drawing.Size(114, 20);
+            this.BUFF_NAME_LABEL5.TabIndex = 6;
+            this.BUFF_NAME_LABEL5.Text = "Buff Full Name";
+            // 
+            // BUFF_NAME_LABEL4
+            // 
+            this.BUFF_NAME_LABEL4.AutoSize = true;
+            this.BUFF_NAME_LABEL4.Location = new System.Drawing.Point(11, 122);
+            this.BUFF_NAME_LABEL4.Name = "BUFF_NAME_LABEL4";
+            this.BUFF_NAME_LABEL4.Size = new System.Drawing.Size(114, 20);
+            this.BUFF_NAME_LABEL4.TabIndex = 5;
+            this.BUFF_NAME_LABEL4.Text = "Buff Full Name";
+            // 
+            // BUFF_NAME_LABEL3
+            // 
+            this.BUFF_NAME_LABEL3.AutoSize = true;
+            this.BUFF_NAME_LABEL3.Location = new System.Drawing.Point(11, 92);
+            this.BUFF_NAME_LABEL3.Name = "BUFF_NAME_LABEL3";
+            this.BUFF_NAME_LABEL3.Size = new System.Drawing.Size(114, 20);
+            this.BUFF_NAME_LABEL3.TabIndex = 4;
+            this.BUFF_NAME_LABEL3.Text = "Buff Full Name";
+            // 
+            // BUFF_NAME_LABEL2
+            // 
+            this.BUFF_NAME_LABEL2.AutoSize = true;
+            this.BUFF_NAME_LABEL2.Location = new System.Drawing.Point(11, 62);
+            this.BUFF_NAME_LABEL2.Name = "BUFF_NAME_LABEL2";
+            this.BUFF_NAME_LABEL2.Size = new System.Drawing.Size(114, 20);
+            this.BUFF_NAME_LABEL2.TabIndex = 3;
+            this.BUFF_NAME_LABEL2.Text = "Buff Full Name";
+            // 
+            // BUFF_POWER_LABEL1
+            // 
+            this.BUFF_POWER_LABEL1.AutoSize = true;
+            this.BUFF_POWER_LABEL1.Location = new System.Drawing.Point(191, 32);
+            this.BUFF_POWER_LABEL1.Name = "BUFF_POWER_LABEL1";
+            this.BUFF_POWER_LABEL1.Size = new System.Drawing.Size(114, 20);
+            this.BUFF_POWER_LABEL1.TabIndex = 2;
+            this.BUFF_POWER_LABEL1.Text = "M.Atk % Boost";
+            // 
+            // BUFF_NAME_LABEL1
+            // 
+            this.BUFF_NAME_LABEL1.AutoSize = true;
+            this.BUFF_NAME_LABEL1.Location = new System.Drawing.Point(11, 32);
+            this.BUFF_NAME_LABEL1.Name = "BUFF_NAME_LABEL1";
+            this.BUFF_NAME_LABEL1.Size = new System.Drawing.Size(114, 20);
+            this.BUFF_NAME_LABEL1.TabIndex = 1;
+            this.BUFF_NAME_LABEL1.Text = "Buff Full Name";
             // 
             // BUFFS_LABEL
             // 
@@ -209,50 +343,14 @@ namespace OriginalL2MagicDmgCalculator
             this.SKILLS_GROUP.Size = new System.Drawing.Size(398, 198);
             this.SKILLS_GROUP.TabIndex = 3;
             // 
-            // SKILLS_LABEL
+            // NUKE_ELE_ALIGN
             // 
-            this.SKILLS_LABEL.AutoSize = true;
-            this.SKILLS_LABEL.Location = new System.Drawing.Point(4, 0);
-            this.SKILLS_LABEL.Name = "SKILLS_LABEL";
-            this.SKILLS_LABEL.Size = new System.Drawing.Size(64, 20);
-            this.SKILLS_LABEL.TabIndex = 0;
-            this.SKILLS_LABEL.Text = "SKILLS";
-            // 
-            // NUKE_TYPE_LABEL
-            // 
-            this.NUKE_TYPE_LABEL.AutoSize = true;
-            this.NUKE_TYPE_LABEL.Location = new System.Drawing.Point(12, 40);
-            this.NUKE_TYPE_LABEL.Name = "NUKE_TYPE_LABEL";
-            this.NUKE_TYPE_LABEL.Size = new System.Drawing.Size(84, 20);
-            this.NUKE_TYPE_LABEL.TabIndex = 1;
-            this.NUKE_TYPE_LABEL.Text = "Nuke Type";
-            // 
-            // NUKE_LEVEL_LABEL
-            // 
-            this.NUKE_LEVEL_LABEL.AutoSize = true;
-            this.NUKE_LEVEL_LABEL.Location = new System.Drawing.Point(12, 80);
-            this.NUKE_LEVEL_LABEL.Name = "NUKE_LEVEL_LABEL";
-            this.NUKE_LEVEL_LABEL.Size = new System.Drawing.Size(87, 20);
-            this.NUKE_LEVEL_LABEL.TabIndex = 2;
-            this.NUKE_LEVEL_LABEL.Text = "Nuke Level";
-            // 
-            // NUKE_POWER_LABEL
-            // 
-            this.NUKE_POWER_LABEL.AutoSize = true;
-            this.NUKE_POWER_LABEL.Location = new System.Drawing.Point(12, 120);
-            this.NUKE_POWER_LABEL.Name = "NUKE_POWER_LABEL";
-            this.NUKE_POWER_LABEL.Size = new System.Drawing.Size(94, 20);
-            this.NUKE_POWER_LABEL.TabIndex = 3;
-            this.NUKE_POWER_LABEL.Text = "Nuke Power";
-            // 
-            // NUKE_ENCHANT_TYPE_LABEL
-            // 
-            this.NUKE_ENCHANT_TYPE_LABEL.AutoSize = true;
-            this.NUKE_ENCHANT_TYPE_LABEL.Location = new System.Drawing.Point(175, 80);
-            this.NUKE_ENCHANT_TYPE_LABEL.Name = "NUKE_ENCHANT_TYPE_LABEL";
-            this.NUKE_ENCHANT_TYPE_LABEL.Size = new System.Drawing.Size(148, 20);
-            this.NUKE_ENCHANT_TYPE_LABEL.TabIndex = 4;
-            this.NUKE_ENCHANT_TYPE_LABEL.Text = "Nuke Enchant Type";
+            this.NUKE_ELE_ALIGN.AutoSize = true;
+            this.NUKE_ELE_ALIGN.Location = new System.Drawing.Point(11, 160);
+            this.NUKE_ELE_ALIGN.Name = "NUKE_ELE_ALIGN";
+            this.NUKE_ELE_ALIGN.Size = new System.Drawing.Size(238, 20);
+            this.NUKE_ELE_ALIGN.TabIndex = 6;
+            this.NUKE_ELE_ALIGN.Text = "Nuke same elemens as weapon:";
             // 
             // NUKE_ENCHANT_POWER_LABEL
             // 
@@ -263,14 +361,59 @@ namespace OriginalL2MagicDmgCalculator
             this.NUKE_ENCHANT_POWER_LABEL.TabIndex = 5;
             this.NUKE_ENCHANT_POWER_LABEL.Text = "Nuke Enchant Power";
             // 
-            // NUKE_ELE_ALIGN
+            // NUKE_ENCHANT_TYPE_LABEL
             // 
-            this.NUKE_ELE_ALIGN.AutoSize = true;
-            this.NUKE_ELE_ALIGN.Location = new System.Drawing.Point(12, 160);
-            this.NUKE_ELE_ALIGN.Name = "NUKE_ELE_ALIGN";
-            this.NUKE_ELE_ALIGN.Size = new System.Drawing.Size(238, 20);
-            this.NUKE_ELE_ALIGN.TabIndex = 6;
-            this.NUKE_ELE_ALIGN.Text = "Nuke same elemens as weapon:";
+            this.NUKE_ENCHANT_TYPE_LABEL.AutoSize = true;
+            this.NUKE_ENCHANT_TYPE_LABEL.Location = new System.Drawing.Point(175, 80);
+            this.NUKE_ENCHANT_TYPE_LABEL.Name = "NUKE_ENCHANT_TYPE_LABEL";
+            this.NUKE_ENCHANT_TYPE_LABEL.Size = new System.Drawing.Size(148, 20);
+            this.NUKE_ENCHANT_TYPE_LABEL.TabIndex = 4;
+            this.NUKE_ENCHANT_TYPE_LABEL.Text = "Nuke Enchant Type";
+            // 
+            // NUKE_POWER_LABEL
+            // 
+            this.NUKE_POWER_LABEL.AutoSize = true;
+            this.NUKE_POWER_LABEL.Location = new System.Drawing.Point(11, 120);
+            this.NUKE_POWER_LABEL.Name = "NUKE_POWER_LABEL";
+            this.NUKE_POWER_LABEL.Size = new System.Drawing.Size(94, 20);
+            this.NUKE_POWER_LABEL.TabIndex = 3;
+            this.NUKE_POWER_LABEL.Text = "Nuke Power";
+            // 
+            // NUKE_LEVEL_LABEL
+            // 
+            this.NUKE_LEVEL_LABEL.AutoSize = true;
+            this.NUKE_LEVEL_LABEL.Location = new System.Drawing.Point(11, 80);
+            this.NUKE_LEVEL_LABEL.Name = "NUKE_LEVEL_LABEL";
+            this.NUKE_LEVEL_LABEL.Size = new System.Drawing.Size(87, 20);
+            this.NUKE_LEVEL_LABEL.TabIndex = 2;
+            this.NUKE_LEVEL_LABEL.Text = "Nuke Level";
+            // 
+            // NUKE_TYPE_LABEL
+            // 
+            this.NUKE_TYPE_LABEL.AutoSize = true;
+            this.NUKE_TYPE_LABEL.Location = new System.Drawing.Point(11, 40);
+            this.NUKE_TYPE_LABEL.Name = "NUKE_TYPE_LABEL";
+            this.NUKE_TYPE_LABEL.Size = new System.Drawing.Size(84, 20);
+            this.NUKE_TYPE_LABEL.TabIndex = 1;
+            this.NUKE_TYPE_LABEL.Text = "Nuke Type";
+            // 
+            // SKILLS_LABEL
+            // 
+            this.SKILLS_LABEL.AutoSize = true;
+            this.SKILLS_LABEL.Location = new System.Drawing.Point(4, 0);
+            this.SKILLS_LABEL.Name = "SKILLS_LABEL";
+            this.SKILLS_LABEL.Size = new System.Drawing.Size(64, 20);
+            this.SKILLS_LABEL.TabIndex = 0;
+            this.SKILLS_LABEL.Text = "SKILLS";
+            // 
+            // HERO_BERS_LABEL
+            // 
+            this.HERO_BERS_LABEL.AutoSize = true;
+            this.HERO_BERS_LABEL.Location = new System.Drawing.Point(11, 212);
+            this.HERO_BERS_LABEL.Name = "HERO_BERS_LABEL";
+            this.HERO_BERS_LABEL.Size = new System.Drawing.Size(128, 20);
+            this.HERO_BERS_LABEL.TabIndex = 13;
+            this.HERO_BERS_LABEL.Text = "Heroic Berserker";
             // 
             // Form1
             // 
@@ -323,6 +466,19 @@ namespace OriginalL2MagicDmgCalculator
         private System.Windows.Forms.Label NUKE_POWER_LABEL;
         private System.Windows.Forms.Label NUKE_LEVEL_LABEL;
         private System.Windows.Forms.Label NUKE_TYPE_LABEL;
+        private System.Windows.Forms.Label BUFF_POWER_LABEL1;
+        private System.Windows.Forms.Label BUFF_NAME_LABEL1;
+        private System.Windows.Forms.Label BUFF_NAME_LABEL2;
+        private System.Windows.Forms.Label BUFF_POWER_LABEL6;
+        private System.Windows.Forms.Label BUFF_POWER_LABEL5;
+        private System.Windows.Forms.Label BUFF_POWER_LABEL4;
+        private System.Windows.Forms.Label BUFF_POWER_LABEL3;
+        private System.Windows.Forms.Label BUFF_POWER_LABEL2;
+        private System.Windows.Forms.Label BUFF_NAME_LABEL6;
+        private System.Windows.Forms.Label BUFF_NAME_LABEL5;
+        private System.Windows.Forms.Label BUFF_NAME_LABEL4;
+        private System.Windows.Forms.Label BUFF_NAME_LABEL3;
+        private System.Windows.Forms.Label HERO_BERS_LABEL;
     }
 }
 
