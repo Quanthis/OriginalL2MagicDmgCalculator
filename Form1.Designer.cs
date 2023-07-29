@@ -31,6 +31,12 @@ namespace OriginalL2MagicDmgCalculator
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HOME));
             this.CHARACTER_STATS_GROUP = new System.Windows.Forms.Panel();
+            this.CLASS_TEXTBOX = new System.Windows.Forms.TextBox();
+            this.ATTRIBUTE_MTEXTBOX = new System.Windows.Forms.MaskedTextBox();
+            this.MATK_MTEXTBOX = new System.Windows.Forms.MaskedTextBox();
+            this.MEN_MTEXTBOX = new System.Windows.Forms.MaskedTextBox();
+            this.WIT_MTEXTBOX = new System.Windows.Forms.MaskedTextBox();
+            this.INT_MTEXTBOX = new System.Windows.Forms.MaskedTextBox();
             this.LEVEL_MTEXTBOX = new System.Windows.Forms.MaskedTextBox();
             this.ATTRIBUTE_LABEL = new System.Windows.Forms.Label();
             this.CLASS_LABEL = new System.Windows.Forms.Label();
@@ -63,7 +69,7 @@ namespace OriginalL2MagicDmgCalculator
             this.BUFFS_LABEL = new System.Windows.Forms.Label();
             this.SKILLS_GROUP = new System.Windows.Forms.Panel();
             this.WEAPON_MASTERY_LEVEL_LABEL = new System.Windows.Forms.Label();
-            this.NUKE_ELE_ALIGN = new System.Windows.Forms.Label();
+            this.NUKE_ELE_ALIGN_LABEL = new System.Windows.Forms.Label();
             this.NUKE_ENCHANT_POWER_LABEL = new System.Windows.Forms.Label();
             this.NUKE_ENCHANT_TYPE_LABEL = new System.Windows.Forms.Label();
             this.NUKE_POWER_LABEL = new System.Windows.Forms.Label();
@@ -71,12 +77,15 @@ namespace OriginalL2MagicDmgCalculator
             this.NUKE_TYPE_LABEL = new System.Windows.Forms.Label();
             this.SKILLS_LABEL = new System.Windows.Forms.Label();
             this.TEST_BUTTON = new System.Windows.Forms.Button();
-            this.INT_MTEXTBOX = new System.Windows.Forms.MaskedTextBox();
-            this.WIT_MTEXTBOX = new System.Windows.Forms.MaskedTextBox();
-            this.MEN_MTEXTBOX = new System.Windows.Forms.MaskedTextBox();
-            this.MATK_MTEXTBOX = new System.Windows.Forms.MaskedTextBox();
-            this.ATTRIBUTE_MTEXTBOX = new System.Windows.Forms.MaskedTextBox();
-            this.CLASS_TEXTBOX = new System.Windows.Forms.TextBox();
+            this.NUKTE_TYPE_TEXTBOX = new System.Windows.Forms.TextBox();
+            this.vScrollBar2 = new System.Windows.Forms.VScrollBar();
+            this.NUKE_LEVEL_MTEXTBOX = new System.Windows.Forms.MaskedTextBox();
+            this.NUKE_POWER_MTEXTBOX = new System.Windows.Forms.MaskedTextBox();
+            this.WEAPON_MASTERY_LV_MTEXTBOX = new System.Windows.Forms.MaskedTextBox();
+            this.NUKE_ENCHANT_TYPE_TEXTBOX = new System.Windows.Forms.TextBox();
+            this.NUKE_ENCHANT_POWER_MTEXTBOX = new System.Windows.Forms.MaskedTextBox();
+            this.NUKE_ELE_ALIGN_CHECKBOX = new System.Windows.Forms.CheckBox();
+            this.vScrollBar3 = new System.Windows.Forms.VScrollBar();
             this.CHARACTER_STATS_GROUP.SuspendLayout();
             this.EQUIPMENT_GROUP.SuspendLayout();
             this.BUFFS_GROUP.SuspendLayout();
@@ -103,10 +112,68 @@ namespace OriginalL2MagicDmgCalculator
             this.CHARACTER_STATS_GROUP.Controls.Add(this.CHARACTER_STATS_LABEL);
             this.CHARACTER_STATS_GROUP.Controls.Add(this.vScrollBar1);
             this.CHARACTER_STATS_GROUP.ForeColor = System.Drawing.Color.White;
-            this.CHARACTER_STATS_GROUP.Location = new System.Drawing.Point(152, 430);
+            this.CHARACTER_STATS_GROUP.Location = new System.Drawing.Point(27, 374);
             this.CHARACTER_STATS_GROUP.Name = "CHARACTER_STATS_GROUP";
             this.CHARACTER_STATS_GROUP.Size = new System.Drawing.Size(408, 198);
             this.CHARACTER_STATS_GROUP.TabIndex = 0;
+            // 
+            // CLASS_TEXTBOX
+            // 
+            this.CLASS_TEXTBOX.Location = new System.Drawing.Point(270, 115);
+            this.CLASS_TEXTBOX.MaxLength = 30;
+            this.CLASS_TEXTBOX.Name = "CLASS_TEXTBOX";
+            this.CLASS_TEXTBOX.Size = new System.Drawing.Size(100, 26);
+            this.CLASS_TEXTBOX.TabIndex = 19;
+            // 
+            // ATTRIBUTE_MTEXTBOX
+            // 
+            this.ATTRIBUTE_MTEXTBOX.Culture = new System.Globalization.CultureInfo("en-US");
+            this.ATTRIBUTE_MTEXTBOX.Location = new System.Drawing.Point(270, 155);
+            this.ATTRIBUTE_MTEXTBOX.Mask = "0000";
+            this.ATTRIBUTE_MTEXTBOX.Name = "ATTRIBUTE_MTEXTBOX";
+            this.ATTRIBUTE_MTEXTBOX.Size = new System.Drawing.Size(102, 26);
+            this.ATTRIBUTE_MTEXTBOX.TabIndex = 18;
+            this.ATTRIBUTE_MTEXTBOX.Text = " 150";
+            // 
+            // MATK_MTEXTBOX
+            // 
+            this.MATK_MTEXTBOX.Culture = new System.Globalization.CultureInfo("en-US");
+            this.MATK_MTEXTBOX.Location = new System.Drawing.Point(270, 75);
+            this.MATK_MTEXTBOX.Mask = "000000";
+            this.MATK_MTEXTBOX.Name = "MATK_MTEXTBOX";
+            this.MATK_MTEXTBOX.Size = new System.Drawing.Size(102, 26);
+            this.MATK_MTEXTBOX.TabIndex = 17;
+            this.MATK_MTEXTBOX.Text = "2000";
+            // 
+            // MEN_MTEXTBOX
+            // 
+            this.MEN_MTEXTBOX.Culture = new System.Globalization.CultureInfo("en-US");
+            this.MEN_MTEXTBOX.Location = new System.Drawing.Point(95, 155);
+            this.MEN_MTEXTBOX.Mask = "000";
+            this.MEN_MTEXTBOX.Name = "MEN_MTEXTBOX";
+            this.MEN_MTEXTBOX.Size = new System.Drawing.Size(50, 26);
+            this.MEN_MTEXTBOX.TabIndex = 16;
+            this.MEN_MTEXTBOX.Text = " 40";
+            // 
+            // WIT_MTEXTBOX
+            // 
+            this.WIT_MTEXTBOX.Culture = new System.Globalization.CultureInfo("en-US");
+            this.WIT_MTEXTBOX.Location = new System.Drawing.Point(95, 115);
+            this.WIT_MTEXTBOX.Mask = "000";
+            this.WIT_MTEXTBOX.Name = "WIT_MTEXTBOX";
+            this.WIT_MTEXTBOX.Size = new System.Drawing.Size(50, 26);
+            this.WIT_MTEXTBOX.TabIndex = 15;
+            this.WIT_MTEXTBOX.Text = " 20";
+            // 
+            // INT_MTEXTBOX
+            // 
+            this.INT_MTEXTBOX.Culture = new System.Globalization.CultureInfo("en-US");
+            this.INT_MTEXTBOX.Location = new System.Drawing.Point(95, 75);
+            this.INT_MTEXTBOX.Mask = "000";
+            this.INT_MTEXTBOX.Name = "INT_MTEXTBOX";
+            this.INT_MTEXTBOX.Size = new System.Drawing.Size(50, 26);
+            this.INT_MTEXTBOX.TabIndex = 14;
+            this.INT_MTEXTBOX.Text = " 40";
             // 
             // LEVEL_MTEXTBOX
             // 
@@ -205,7 +272,7 @@ namespace OriginalL2MagicDmgCalculator
             this.EQUIPMENT_GROUP.Controls.Add(this.WEAPON_MATAK_LABEL);
             this.EQUIPMENT_GROUP.Controls.Add(this.EQUIPMENT_LABEL);
             this.EQUIPMENT_GROUP.ForeColor = System.Drawing.Color.White;
-            this.EQUIPMENT_GROUP.Location = new System.Drawing.Point(152, 86);
+            this.EQUIPMENT_GROUP.Location = new System.Drawing.Point(27, 30);
             this.EQUIPMENT_GROUP.Name = "EQUIPMENT_GROUP";
             this.EQUIPMENT_GROUP.Size = new System.Drawing.Size(397, 239);
             this.EQUIPMENT_GROUP.TabIndex = 1;
@@ -249,6 +316,7 @@ namespace OriginalL2MagicDmgCalculator
             // BUFFS_GROUP
             // 
             this.BUFFS_GROUP.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.BUFFS_GROUP.Controls.Add(this.vScrollBar3);
             this.BUFFS_GROUP.Controls.Add(this.HERO_BERS_LABEL);
             this.BUFFS_GROUP.Controls.Add(this.BUFF_POWER_LABEL6);
             this.BUFFS_GROUP.Controls.Add(this.BUFF_POWER_LABEL5);
@@ -264,9 +332,9 @@ namespace OriginalL2MagicDmgCalculator
             this.BUFFS_GROUP.Controls.Add(this.BUFF_NAME_LABEL1);
             this.BUFFS_GROUP.Controls.Add(this.BUFFS_LABEL);
             this.BUFFS_GROUP.ForeColor = System.Drawing.Color.White;
-            this.BUFFS_GROUP.Location = new System.Drawing.Point(719, 86);
+            this.BUFFS_GROUP.Location = new System.Drawing.Point(594, 30);
             this.BUFFS_GROUP.Name = "BUFFS_GROUP";
-            this.BUFFS_GROUP.Size = new System.Drawing.Size(390, 239);
+            this.BUFFS_GROUP.Size = new System.Drawing.Size(572, 239);
             this.BUFFS_GROUP.TabIndex = 2;
             // 
             // HERO_BERS_LABEL
@@ -281,7 +349,7 @@ namespace OriginalL2MagicDmgCalculator
             // BUFF_POWER_LABEL6
             // 
             this.BUFF_POWER_LABEL6.AutoSize = true;
-            this.BUFF_POWER_LABEL6.Location = new System.Drawing.Point(191, 182);
+            this.BUFF_POWER_LABEL6.Location = new System.Drawing.Point(358, 182);
             this.BUFF_POWER_LABEL6.Name = "BUFF_POWER_LABEL6";
             this.BUFF_POWER_LABEL6.Size = new System.Drawing.Size(114, 20);
             this.BUFF_POWER_LABEL6.TabIndex = 12;
@@ -290,7 +358,7 @@ namespace OriginalL2MagicDmgCalculator
             // BUFF_POWER_LABEL5
             // 
             this.BUFF_POWER_LABEL5.AutoSize = true;
-            this.BUFF_POWER_LABEL5.Location = new System.Drawing.Point(191, 152);
+            this.BUFF_POWER_LABEL5.Location = new System.Drawing.Point(358, 152);
             this.BUFF_POWER_LABEL5.Name = "BUFF_POWER_LABEL5";
             this.BUFF_POWER_LABEL5.Size = new System.Drawing.Size(114, 20);
             this.BUFF_POWER_LABEL5.TabIndex = 11;
@@ -299,7 +367,7 @@ namespace OriginalL2MagicDmgCalculator
             // BUFF_POWER_LABEL4
             // 
             this.BUFF_POWER_LABEL4.AutoSize = true;
-            this.BUFF_POWER_LABEL4.Location = new System.Drawing.Point(191, 122);
+            this.BUFF_POWER_LABEL4.Location = new System.Drawing.Point(358, 122);
             this.BUFF_POWER_LABEL4.Name = "BUFF_POWER_LABEL4";
             this.BUFF_POWER_LABEL4.Size = new System.Drawing.Size(114, 20);
             this.BUFF_POWER_LABEL4.TabIndex = 10;
@@ -308,7 +376,7 @@ namespace OriginalL2MagicDmgCalculator
             // BUFF_POWER_LABEL3
             // 
             this.BUFF_POWER_LABEL3.AutoSize = true;
-            this.BUFF_POWER_LABEL3.Location = new System.Drawing.Point(191, 92);
+            this.BUFF_POWER_LABEL3.Location = new System.Drawing.Point(358, 92);
             this.BUFF_POWER_LABEL3.Name = "BUFF_POWER_LABEL3";
             this.BUFF_POWER_LABEL3.Size = new System.Drawing.Size(114, 20);
             this.BUFF_POWER_LABEL3.TabIndex = 9;
@@ -317,7 +385,7 @@ namespace OriginalL2MagicDmgCalculator
             // BUFF_POWER_LABEL2
             // 
             this.BUFF_POWER_LABEL2.AutoSize = true;
-            this.BUFF_POWER_LABEL2.Location = new System.Drawing.Point(191, 62);
+            this.BUFF_POWER_LABEL2.Location = new System.Drawing.Point(358, 62);
             this.BUFF_POWER_LABEL2.Name = "BUFF_POWER_LABEL2";
             this.BUFF_POWER_LABEL2.Size = new System.Drawing.Size(114, 20);
             this.BUFF_POWER_LABEL2.TabIndex = 8;
@@ -371,7 +439,7 @@ namespace OriginalL2MagicDmgCalculator
             // BUFF_POWER_LABEL1
             // 
             this.BUFF_POWER_LABEL1.AutoSize = true;
-            this.BUFF_POWER_LABEL1.Location = new System.Drawing.Point(191, 32);
+            this.BUFF_POWER_LABEL1.Location = new System.Drawing.Point(358, 32);
             this.BUFF_POWER_LABEL1.Name = "BUFF_POWER_LABEL1";
             this.BUFF_POWER_LABEL1.Size = new System.Drawing.Size(114, 20);
             this.BUFF_POWER_LABEL1.TabIndex = 2;
@@ -398,8 +466,16 @@ namespace OriginalL2MagicDmgCalculator
             // SKILLS_GROUP
             // 
             this.SKILLS_GROUP.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.SKILLS_GROUP.Controls.Add(this.NUKE_ELE_ALIGN_CHECKBOX);
+            this.SKILLS_GROUP.Controls.Add(this.NUKE_ENCHANT_POWER_MTEXTBOX);
+            this.SKILLS_GROUP.Controls.Add(this.NUKE_ENCHANT_TYPE_TEXTBOX);
+            this.SKILLS_GROUP.Controls.Add(this.WEAPON_MASTERY_LV_MTEXTBOX);
+            this.SKILLS_GROUP.Controls.Add(this.NUKE_POWER_MTEXTBOX);
+            this.SKILLS_GROUP.Controls.Add(this.NUKE_LEVEL_MTEXTBOX);
+            this.SKILLS_GROUP.Controls.Add(this.vScrollBar2);
+            this.SKILLS_GROUP.Controls.Add(this.NUKTE_TYPE_TEXTBOX);
             this.SKILLS_GROUP.Controls.Add(this.WEAPON_MASTERY_LEVEL_LABEL);
-            this.SKILLS_GROUP.Controls.Add(this.NUKE_ELE_ALIGN);
+            this.SKILLS_GROUP.Controls.Add(this.NUKE_ELE_ALIGN_LABEL);
             this.SKILLS_GROUP.Controls.Add(this.NUKE_ENCHANT_POWER_LABEL);
             this.SKILLS_GROUP.Controls.Add(this.NUKE_ENCHANT_TYPE_LABEL);
             this.SKILLS_GROUP.Controls.Add(this.NUKE_POWER_LABEL);
@@ -407,33 +483,33 @@ namespace OriginalL2MagicDmgCalculator
             this.SKILLS_GROUP.Controls.Add(this.NUKE_TYPE_LABEL);
             this.SKILLS_GROUP.Controls.Add(this.SKILLS_LABEL);
             this.SKILLS_GROUP.ForeColor = System.Drawing.Color.White;
-            this.SKILLS_GROUP.Location = new System.Drawing.Point(711, 430);
+            this.SKILLS_GROUP.Location = new System.Drawing.Point(586, 374);
             this.SKILLS_GROUP.Name = "SKILLS_GROUP";
-            this.SKILLS_GROUP.Size = new System.Drawing.Size(398, 198);
+            this.SKILLS_GROUP.Size = new System.Drawing.Size(580, 198);
             this.SKILLS_GROUP.TabIndex = 3;
             // 
             // WEAPON_MASTERY_LEVEL_LABEL
             // 
             this.WEAPON_MASTERY_LEVEL_LABEL.AutoSize = true;
-            this.WEAPON_MASTERY_LEVEL_LABEL.Location = new System.Drawing.Point(175, 40);
+            this.WEAPON_MASTERY_LEVEL_LABEL.Location = new System.Drawing.Point(283, 40);
             this.WEAPON_MASTERY_LEVEL_LABEL.Name = "WEAPON_MASTERY_LEVEL_LABEL";
             this.WEAPON_MASTERY_LEVEL_LABEL.Size = new System.Drawing.Size(149, 20);
             this.WEAPON_MASTERY_LEVEL_LABEL.TabIndex = 7;
             this.WEAPON_MASTERY_LEVEL_LABEL.Text = "Weapon Mastery Lv";
             // 
-            // NUKE_ELE_ALIGN
+            // NUKE_ELE_ALIGN_LABEL
             // 
-            this.NUKE_ELE_ALIGN.AutoSize = true;
-            this.NUKE_ELE_ALIGN.Location = new System.Drawing.Point(11, 160);
-            this.NUKE_ELE_ALIGN.Name = "NUKE_ELE_ALIGN";
-            this.NUKE_ELE_ALIGN.Size = new System.Drawing.Size(238, 20);
-            this.NUKE_ELE_ALIGN.TabIndex = 6;
-            this.NUKE_ELE_ALIGN.Text = "Nuke same elemens as weapon:";
+            this.NUKE_ELE_ALIGN_LABEL.AutoSize = true;
+            this.NUKE_ELE_ALIGN_LABEL.Location = new System.Drawing.Point(283, 80);
+            this.NUKE_ELE_ALIGN_LABEL.Name = "NUKE_ELE_ALIGN_LABEL";
+            this.NUKE_ELE_ALIGN_LABEL.Size = new System.Drawing.Size(239, 20);
+            this.NUKE_ELE_ALIGN_LABEL.TabIndex = 6;
+            this.NUKE_ELE_ALIGN_LABEL.Text = "Nuke same elemenT as weapon:";
             // 
             // NUKE_ENCHANT_POWER_LABEL
             // 
             this.NUKE_ENCHANT_POWER_LABEL.AutoSize = true;
-            this.NUKE_ENCHANT_POWER_LABEL.Location = new System.Drawing.Point(175, 120);
+            this.NUKE_ENCHANT_POWER_LABEL.Location = new System.Drawing.Point(283, 120);
             this.NUKE_ENCHANT_POWER_LABEL.Name = "NUKE_ENCHANT_POWER_LABEL";
             this.NUKE_ENCHANT_POWER_LABEL.Size = new System.Drawing.Size(158, 20);
             this.NUKE_ENCHANT_POWER_LABEL.TabIndex = 5;
@@ -442,7 +518,7 @@ namespace OriginalL2MagicDmgCalculator
             // NUKE_ENCHANT_TYPE_LABEL
             // 
             this.NUKE_ENCHANT_TYPE_LABEL.AutoSize = true;
-            this.NUKE_ENCHANT_TYPE_LABEL.Location = new System.Drawing.Point(175, 80);
+            this.NUKE_ENCHANT_TYPE_LABEL.Location = new System.Drawing.Point(11, 160);
             this.NUKE_ENCHANT_TYPE_LABEL.Name = "NUKE_ENCHANT_TYPE_LABEL";
             this.NUKE_ENCHANT_TYPE_LABEL.Size = new System.Drawing.Size(148, 20);
             this.NUKE_ENCHANT_TYPE_LABEL.TabIndex = 4;
@@ -486,7 +562,7 @@ namespace OriginalL2MagicDmgCalculator
             // 
             // TEST_BUTTON
             // 
-            this.TEST_BUTTON.Location = new System.Drawing.Point(562, 356);
+            this.TEST_BUTTON.Location = new System.Drawing.Point(439, 305);
             this.TEST_BUTTON.Name = "TEST_BUTTON";
             this.TEST_BUTTON.Size = new System.Drawing.Size(138, 27);
             this.TEST_BUTTON.TabIndex = 4;
@@ -494,62 +570,92 @@ namespace OriginalL2MagicDmgCalculator
             this.TEST_BUTTON.UseVisualStyleBackColor = true;
             this.TEST_BUTTON.Click += new System.EventHandler(this.TEST_BUTTON_Click);
             // 
-            // INT_MTEXTBOX
+            // NUKTE_TYPE_TEXTBOX
             // 
-            this.INT_MTEXTBOX.Culture = new System.Globalization.CultureInfo("en-US");
-            this.INT_MTEXTBOX.Location = new System.Drawing.Point(95, 75);
-            this.INT_MTEXTBOX.Mask = "000";
-            this.INT_MTEXTBOX.Name = "INT_MTEXTBOX";
-            this.INT_MTEXTBOX.Size = new System.Drawing.Size(50, 26);
-            this.INT_MTEXTBOX.TabIndex = 14;
-            this.INT_MTEXTBOX.Text = " 40";
+            this.NUKTE_TYPE_TEXTBOX.Location = new System.Drawing.Point(120, 40);
+            this.NUKTE_TYPE_TEXTBOX.MaxLength = 30;
+            this.NUKTE_TYPE_TEXTBOX.Name = "NUKTE_TYPE_TEXTBOX";
+            this.NUKTE_TYPE_TEXTBOX.Size = new System.Drawing.Size(148, 26);
+            this.NUKTE_TYPE_TEXTBOX.TabIndex = 20;
             // 
-            // WIT_MTEXTBOX
+            // vScrollBar2
             // 
-            this.WIT_MTEXTBOX.Culture = new System.Globalization.CultureInfo("en-US");
-            this.WIT_MTEXTBOX.Location = new System.Drawing.Point(95, 115);
-            this.WIT_MTEXTBOX.Mask = "000";
-            this.WIT_MTEXTBOX.Name = "WIT_MTEXTBOX";
-            this.WIT_MTEXTBOX.Size = new System.Drawing.Size(50, 26);
-            this.WIT_MTEXTBOX.TabIndex = 15;
-            this.WIT_MTEXTBOX.Text = " 20";
+            this.vScrollBar2.Location = new System.Drawing.Point(560, 0);
+            this.vScrollBar2.Name = "vScrollBar2";
+            this.vScrollBar2.Size = new System.Drawing.Size(20, 198);
+            this.vScrollBar2.TabIndex = 20;
             // 
-            // MEN_MTEXTBOX
+            // NUKE_LEVEL_MTEXTBOX
             // 
-            this.MEN_MTEXTBOX.Culture = new System.Globalization.CultureInfo("en-US");
-            this.MEN_MTEXTBOX.Location = new System.Drawing.Point(95, 155);
-            this.MEN_MTEXTBOX.Mask = "000";
-            this.MEN_MTEXTBOX.Name = "MEN_MTEXTBOX";
-            this.MEN_MTEXTBOX.Size = new System.Drawing.Size(50, 26);
-            this.MEN_MTEXTBOX.TabIndex = 16;
-            this.MEN_MTEXTBOX.Text = " 40";
+            this.NUKE_LEVEL_MTEXTBOX.Culture = new System.Globalization.CultureInfo("en-US");
+            this.NUKE_LEVEL_MTEXTBOX.Location = new System.Drawing.Point(120, 80);
+            this.NUKE_LEVEL_MTEXTBOX.Mask = "00";
+            this.NUKE_LEVEL_MTEXTBOX.Name = "NUKE_LEVEL_MTEXTBOX";
+            this.NUKE_LEVEL_MTEXTBOX.Size = new System.Drawing.Size(50, 26);
+            this.NUKE_LEVEL_MTEXTBOX.TabIndex = 20;
+            this.NUKE_LEVEL_MTEXTBOX.Text = "09";
             // 
-            // MATK_MTEXTBOX
+            // NUKE_POWER_MTEXTBOX
             // 
-            this.MATK_MTEXTBOX.Culture = new System.Globalization.CultureInfo("en-US");
-            this.MATK_MTEXTBOX.Location = new System.Drawing.Point(270, 75);
-            this.MATK_MTEXTBOX.Mask = "000000";
-            this.MATK_MTEXTBOX.Name = "MATK_MTEXTBOX";
-            this.MATK_MTEXTBOX.Size = new System.Drawing.Size(102, 26);
-            this.MATK_MTEXTBOX.TabIndex = 17;
-            this.MATK_MTEXTBOX.Text = "2000";
+            this.NUKE_POWER_MTEXTBOX.Culture = new System.Globalization.CultureInfo("en-US");
+            this.NUKE_POWER_MTEXTBOX.Location = new System.Drawing.Point(120, 120);
+            this.NUKE_POWER_MTEXTBOX.Mask = "0000";
+            this.NUKE_POWER_MTEXTBOX.Name = "NUKE_POWER_MTEXTBOX";
+            this.NUKE_POWER_MTEXTBOX.Size = new System.Drawing.Size(102, 26);
+            this.NUKE_POWER_MTEXTBOX.TabIndex = 20;
+            this.NUKE_POWER_MTEXTBOX.Text = " 150";
             // 
-            // ATTRIBUTE_MTEXTBOX
+            // WEAPON_MASTERY_LV_MTEXTBOX
             // 
-            this.ATTRIBUTE_MTEXTBOX.Culture = new System.Globalization.CultureInfo("en-US");
-            this.ATTRIBUTE_MTEXTBOX.Location = new System.Drawing.Point(270, 155);
-            this.ATTRIBUTE_MTEXTBOX.Mask = "0000";
-            this.ATTRIBUTE_MTEXTBOX.Name = "ATTRIBUTE_MTEXTBOX";
-            this.ATTRIBUTE_MTEXTBOX.Size = new System.Drawing.Size(102, 26);
-            this.ATTRIBUTE_MTEXTBOX.TabIndex = 18;
-            this.ATTRIBUTE_MTEXTBOX.Text = " 150";
+            this.WEAPON_MASTERY_LV_MTEXTBOX.Culture = new System.Globalization.CultureInfo("en-US");
+            this.WEAPON_MASTERY_LV_MTEXTBOX.Location = new System.Drawing.Point(460, 40);
+            this.WEAPON_MASTERY_LV_MTEXTBOX.Mask = "00";
+            this.WEAPON_MASTERY_LV_MTEXTBOX.Name = "WEAPON_MASTERY_LV_MTEXTBOX";
+            this.WEAPON_MASTERY_LV_MTEXTBOX.Size = new System.Drawing.Size(50, 26);
+            this.WEAPON_MASTERY_LV_MTEXTBOX.TabIndex = 21;
+            this.WEAPON_MASTERY_LV_MTEXTBOX.Text = "09";
             // 
-            // CLASS_TEXTBOX
+            // NUKE_ENCHANT_TYPE_TEXTBOX
             // 
-            this.CLASS_TEXTBOX.Location = new System.Drawing.Point(270, 115);
-            this.CLASS_TEXTBOX.Name = "CLASS_TEXTBOX";
-            this.CLASS_TEXTBOX.Size = new System.Drawing.Size(100, 26);
-            this.CLASS_TEXTBOX.TabIndex = 19;
+            this.NUKE_ENCHANT_TYPE_TEXTBOX.Location = new System.Drawing.Point(195, 160);
+            this.NUKE_ENCHANT_TYPE_TEXTBOX.MaxLength = 30;
+            this.NUKE_ENCHANT_TYPE_TEXTBOX.Name = "NUKE_ENCHANT_TYPE_TEXTBOX";
+            this.NUKE_ENCHANT_TYPE_TEXTBOX.Size = new System.Drawing.Size(315, 26);
+            this.NUKE_ENCHANT_TYPE_TEXTBOX.TabIndex = 20;
+            // 
+            // NUKE_ENCHANT_POWER_MTEXTBOX
+            // 
+            this.NUKE_ENCHANT_POWER_MTEXTBOX.Culture = new System.Globalization.CultureInfo("en-US");
+            this.NUKE_ENCHANT_POWER_MTEXTBOX.Location = new System.Drawing.Point(460, 120);
+            this.NUKE_ENCHANT_POWER_MTEXTBOX.Mask = "00";
+            this.NUKE_ENCHANT_POWER_MTEXTBOX.Name = "NUKE_ENCHANT_POWER_MTEXTBOX";
+            this.NUKE_ENCHANT_POWER_MTEXTBOX.Size = new System.Drawing.Size(50, 26);
+            this.NUKE_ENCHANT_POWER_MTEXTBOX.TabIndex = 22;
+            this.NUKE_ENCHANT_POWER_MTEXTBOX.Text = " 0";
+            // 
+            // NUKE_ELE_ALIGN_CHECKBOX
+            // 
+            this.NUKE_ELE_ALIGN_CHECKBOX.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.NUKE_ELE_ALIGN_CHECKBOX.CheckAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.NUKE_ELE_ALIGN_CHECKBOX.Checked = true;
+            this.NUKE_ELE_ALIGN_CHECKBOX.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.NUKE_ELE_ALIGN_CHECKBOX.Location = new System.Drawing.Point(528, 79);
+            this.NUKE_ELE_ALIGN_CHECKBOX.MaximumSize = new System.Drawing.Size(26, 26);
+            this.NUKE_ELE_ALIGN_CHECKBOX.MinimumSize = new System.Drawing.Size(26, 26);
+            this.NUKE_ELE_ALIGN_CHECKBOX.Name = "NUKE_ELE_ALIGN_CHECKBOX";
+            this.NUKE_ELE_ALIGN_CHECKBOX.Padding = new System.Windows.Forms.Padding(1);
+            this.NUKE_ELE_ALIGN_CHECKBOX.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.NUKE_ELE_ALIGN_CHECKBOX.Size = new System.Drawing.Size(26, 26);
+            this.NUKE_ELE_ALIGN_CHECKBOX.TabIndex = 23;
+            this.NUKE_ELE_ALIGN_CHECKBOX.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.NUKE_ELE_ALIGN_CHECKBOX.UseVisualStyleBackColor = true;
+            // 
+            // vScrollBar3
+            // 
+            this.vScrollBar3.Location = new System.Drawing.Point(552, 0);
+            this.vScrollBar3.Name = "vScrollBar3";
+            this.vScrollBar3.Size = new System.Drawing.Size(20, 239);
+            this.vScrollBar3.TabIndex = 24;
             // 
             // HOME
             // 
@@ -597,7 +703,7 @@ namespace OriginalL2MagicDmgCalculator
         private System.Windows.Forms.Label BUFFS_LABEL;
         private System.Windows.Forms.Panel SKILLS_GROUP;
         private System.Windows.Forms.Label SKILLS_LABEL;
-        private System.Windows.Forms.Label NUKE_ELE_ALIGN;
+        private System.Windows.Forms.Label NUKE_ELE_ALIGN_LABEL;
         private System.Windows.Forms.Label NUKE_ENCHANT_POWER_LABEL;
         private System.Windows.Forms.Label NUKE_ENCHANT_TYPE_LABEL;
         private System.Windows.Forms.Label NUKE_POWER_LABEL;
@@ -628,6 +734,15 @@ namespace OriginalL2MagicDmgCalculator
         private System.Windows.Forms.TextBox CLASS_TEXTBOX;
         private System.Windows.Forms.MaskedTextBox ATTRIBUTE_MTEXTBOX;
         private System.Windows.Forms.MaskedTextBox MATK_MTEXTBOX;
+        private System.Windows.Forms.MaskedTextBox WEAPON_MASTERY_LV_MTEXTBOX;
+        private System.Windows.Forms.MaskedTextBox NUKE_POWER_MTEXTBOX;
+        private System.Windows.Forms.MaskedTextBox NUKE_LEVEL_MTEXTBOX;
+        private System.Windows.Forms.VScrollBar vScrollBar2;
+        private System.Windows.Forms.TextBox NUKTE_TYPE_TEXTBOX;
+        private System.Windows.Forms.TextBox NUKE_ENCHANT_TYPE_TEXTBOX;
+        private System.Windows.Forms.MaskedTextBox NUKE_ENCHANT_POWER_MTEXTBOX;
+        private System.Windows.Forms.CheckBox NUKE_ELE_ALIGN_CHECKBOX;
+        private System.Windows.Forms.VScrollBar vScrollBar3;
     }
 }
 
