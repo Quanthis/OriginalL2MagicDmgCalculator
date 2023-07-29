@@ -39,5 +39,10 @@ namespace OriginalL2MagicDmgCalculator
             int contentBy2 = content / 2;
             Trace.WriteLine("Content by 2: " + contentBy2);
         }
+
+        private async void SAVE_TO_BASE_BUTTON_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

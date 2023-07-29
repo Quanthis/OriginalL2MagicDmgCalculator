@@ -106,6 +106,7 @@ namespace OriginalL2MagicDmgCalculator
             this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
             this.DEALT_DAMAGE_MTEXTBOX = new System.Windows.Forms.MaskedTextBox();
             this.DEALT_DAMAGE_LABEL = new System.Windows.Forms.Label();
+            this.SAVE_TO_BASE_BUTTON = new System.Windows.Forms.Button();
             this.CHARACTER_STATS_GROUP.SuspendLayout();
             this.EQUIPMENT_GROUP.SuspendLayout();
             this.BUFFS_GROUP.SuspendLayout();
@@ -894,12 +895,24 @@ namespace OriginalL2MagicDmgCalculator
             this.DEALT_DAMAGE_LABEL.TabIndex = 20;
             this.DEALT_DAMAGE_LABEL.Text = "DEALT DAMAGE:";
             // 
+            // SAVE_TO_BASE_BUTTON
+            // 
+            this.SAVE_TO_BASE_BUTTON.AutoSize = true;
+            this.SAVE_TO_BASE_BUTTON.Location = new System.Drawing.Point(594, 315);
+            this.SAVE_TO_BASE_BUTTON.Name = "SAVE_TO_BASE_BUTTON";
+            this.SAVE_TO_BASE_BUTTON.Size = new System.Drawing.Size(118, 30);
+            this.SAVE_TO_BASE_BUTTON.TabIndex = 21;
+            this.SAVE_TO_BASE_BUTTON.Text = "Save To Base";
+            this.SAVE_TO_BASE_BUTTON.UseVisualStyleBackColor = true;
+            this.SAVE_TO_BASE_BUTTON.Click += new System.EventHandler(this.SAVE_TO_BASE_BUTTON_Click);
+            // 
             // HOME
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.WindowFrame;
             this.ClientSize = new System.Drawing.Size(1200, 692);
+            this.Controls.Add(this.SAVE_TO_BASE_BUTTON);
             this.Controls.Add(this.DEALT_DAMAGE_LABEL);
             this.Controls.Add(this.DEALT_DAMAGE_MTEXTBOX);
             this.Controls.Add(this.TEST_BUTTON);
@@ -1003,6 +1016,7 @@ namespace OriginalL2MagicDmgCalculator
         private System.Windows.Forms.Label AUGMENT_BOOST_LABEL;
         private System.Windows.Forms.MaskedTextBox DEALT_DAMAGE_MTEXTBOX;
         private System.Windows.Forms.Label DEALT_DAMAGE_LABEL;
+        private System.Windows.Forms.Button SAVE_TO_BASE_BUTTON;
     }
 }
 
