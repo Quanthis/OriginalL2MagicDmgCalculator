@@ -31,6 +31,7 @@ namespace OriginalL2MagicDmgCalculator
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HOME));
             this.CHARACTER_STATS_GROUP = new System.Windows.Forms.Panel();
+            this.LEVEL_MTEXTBOX = new System.Windows.Forms.MaskedTextBox();
             this.ATTRIBUTE_LABEL = new System.Windows.Forms.Label();
             this.CLASS_LABEL = new System.Windows.Forms.Label();
             this.MATAK_LABEL = new System.Windows.Forms.Label();
@@ -41,6 +42,8 @@ namespace OriginalL2MagicDmgCalculator
             this.CHARACTER_STATS_LABEL = new System.Windows.Forms.Label();
             this.vScrollBar1 = new System.Windows.Forms.VScrollBar();
             this.EQUIPMENT_GROUP = new System.Windows.Forms.Panel();
+            this.VALAKAS_EQUIPED_LABEL = new System.Windows.Forms.Label();
+            this.SIGIL_EQUIPED_LABEL = new System.Windows.Forms.Label();
             this.WEAPON_MATAK_LABEL = new System.Windows.Forms.Label();
             this.EQUIPMENT_LABEL = new System.Windows.Forms.Label();
             this.BUFFS_GROUP = new System.Windows.Forms.Panel();
@@ -67,8 +70,10 @@ namespace OriginalL2MagicDmgCalculator
             this.NUKE_LEVEL_LABEL = new System.Windows.Forms.Label();
             this.NUKE_TYPE_LABEL = new System.Windows.Forms.Label();
             this.SKILLS_LABEL = new System.Windows.Forms.Label();
-            this.SIGIL_EQUIPED_LABEL = new System.Windows.Forms.Label();
-            this.VALAKAS_EQUIPED_LABEL = new System.Windows.Forms.Label();
+            this.TEST_BUTTON = new System.Windows.Forms.Button();
+            this.INT_MTEXTBOX = new System.Windows.Forms.MaskedTextBox();
+            this.WIT_MTEXTBOX = new System.Windows.Forms.MaskedTextBox();
+            this.MEN_MTEXTBOX = new System.Windows.Forms.MaskedTextBox();
             this.CHARACTER_STATS_GROUP.SuspendLayout();
             this.EQUIPMENT_GROUP.SuspendLayout();
             this.BUFFS_GROUP.SuspendLayout();
@@ -78,6 +83,10 @@ namespace OriginalL2MagicDmgCalculator
             // CHARACTER_STATS_GROUP
             // 
             this.CHARACTER_STATS_GROUP.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.CHARACTER_STATS_GROUP.Controls.Add(this.MEN_MTEXTBOX);
+            this.CHARACTER_STATS_GROUP.Controls.Add(this.WIT_MTEXTBOX);
+            this.CHARACTER_STATS_GROUP.Controls.Add(this.INT_MTEXTBOX);
+            this.CHARACTER_STATS_GROUP.Controls.Add(this.LEVEL_MTEXTBOX);
             this.CHARACTER_STATS_GROUP.Controls.Add(this.ATTRIBUTE_LABEL);
             this.CHARACTER_STATS_GROUP.Controls.Add(this.CLASS_LABEL);
             this.CHARACTER_STATS_GROUP.Controls.Add(this.MATAK_LABEL);
@@ -92,6 +101,16 @@ namespace OriginalL2MagicDmgCalculator
             this.CHARACTER_STATS_GROUP.Name = "CHARACTER_STATS_GROUP";
             this.CHARACTER_STATS_GROUP.Size = new System.Drawing.Size(408, 198);
             this.CHARACTER_STATS_GROUP.TabIndex = 0;
+            // 
+            // LEVEL_MTEXTBOX
+            // 
+            this.LEVEL_MTEXTBOX.Culture = new System.Globalization.CultureInfo("en-US");
+            this.LEVEL_MTEXTBOX.Location = new System.Drawing.Point(95, 35);
+            this.LEVEL_MTEXTBOX.Mask = "000";
+            this.LEVEL_MTEXTBOX.Name = "LEVEL_MTEXTBOX";
+            this.LEVEL_MTEXTBOX.Size = new System.Drawing.Size(50, 26);
+            this.LEVEL_MTEXTBOX.TabIndex = 13;
+            this.LEVEL_MTEXTBOX.Text = " 85";
             // 
             // ATTRIBUTE_LABEL
             // 
@@ -184,6 +203,24 @@ namespace OriginalL2MagicDmgCalculator
             this.EQUIPMENT_GROUP.Name = "EQUIPMENT_GROUP";
             this.EQUIPMENT_GROUP.Size = new System.Drawing.Size(397, 239);
             this.EQUIPMENT_GROUP.TabIndex = 1;
+            // 
+            // VALAKAS_EQUIPED_LABEL
+            // 
+            this.VALAKAS_EQUIPED_LABEL.AutoSize = true;
+            this.VALAKAS_EQUIPED_LABEL.Location = new System.Drawing.Point(11, 120);
+            this.VALAKAS_EQUIPED_LABEL.Name = "VALAKAS_EQUIPED_LABEL";
+            this.VALAKAS_EQUIPED_LABEL.Size = new System.Drawing.Size(134, 20);
+            this.VALAKAS_EQUIPED_LABEL.TabIndex = 3;
+            this.VALAKAS_EQUIPED_LABEL.Text = "Valakas_Equiped";
+            // 
+            // SIGIL_EQUIPED_LABEL
+            // 
+            this.SIGIL_EQUIPED_LABEL.AutoSize = true;
+            this.SIGIL_EQUIPED_LABEL.Location = new System.Drawing.Point(11, 80);
+            this.SIGIL_EQUIPED_LABEL.Name = "SIGIL_EQUIPED_LABEL";
+            this.SIGIL_EQUIPED_LABEL.Size = new System.Drawing.Size(106, 20);
+            this.SIGIL_EQUIPED_LABEL.TabIndex = 2;
+            this.SIGIL_EQUIPED_LABEL.Text = "Sigil_Equiped";
             // 
             // WEAPON_MATAK_LABEL
             // 
@@ -441,23 +478,45 @@ namespace OriginalL2MagicDmgCalculator
             this.SKILLS_LABEL.TabIndex = 0;
             this.SKILLS_LABEL.Text = "SKILLS";
             // 
-            // SIGIL_EQUIPED_LABEL
+            // TEST_BUTTON
             // 
-            this.SIGIL_EQUIPED_LABEL.AutoSize = true;
-            this.SIGIL_EQUIPED_LABEL.Location = new System.Drawing.Point(11, 80);
-            this.SIGIL_EQUIPED_LABEL.Name = "SIGIL_EQUIPED_LABEL";
-            this.SIGIL_EQUIPED_LABEL.Size = new System.Drawing.Size(106, 20);
-            this.SIGIL_EQUIPED_LABEL.TabIndex = 2;
-            this.SIGIL_EQUIPED_LABEL.Text = "Sigil_Equiped";
+            this.TEST_BUTTON.Location = new System.Drawing.Point(562, 356);
+            this.TEST_BUTTON.Name = "TEST_BUTTON";
+            this.TEST_BUTTON.Size = new System.Drawing.Size(138, 27);
+            this.TEST_BUTTON.TabIndex = 4;
+            this.TEST_BUTTON.Text = "TEST_BUTTON";
+            this.TEST_BUTTON.UseVisualStyleBackColor = true;
+            this.TEST_BUTTON.Click += new System.EventHandler(this.TEST_BUTTON_Click);
             // 
-            // VALAKAS_EQUIPED_LABEL
+            // INT_MTEXTBOX
             // 
-            this.VALAKAS_EQUIPED_LABEL.AutoSize = true;
-            this.VALAKAS_EQUIPED_LABEL.Location = new System.Drawing.Point(11, 120);
-            this.VALAKAS_EQUIPED_LABEL.Name = "VALAKAS_EQUIPED_LABEL";
-            this.VALAKAS_EQUIPED_LABEL.Size = new System.Drawing.Size(134, 20);
-            this.VALAKAS_EQUIPED_LABEL.TabIndex = 3;
-            this.VALAKAS_EQUIPED_LABEL.Text = "Valakas_Equiped";
+            this.INT_MTEXTBOX.Culture = new System.Globalization.CultureInfo("en-US");
+            this.INT_MTEXTBOX.Location = new System.Drawing.Point(95, 75);
+            this.INT_MTEXTBOX.Mask = "000";
+            this.INT_MTEXTBOX.Name = "INT_MTEXTBOX";
+            this.INT_MTEXTBOX.Size = new System.Drawing.Size(50, 26);
+            this.INT_MTEXTBOX.TabIndex = 14;
+            this.INT_MTEXTBOX.Text = " 40";
+            // 
+            // WIT_MTEXTBOX
+            // 
+            this.WIT_MTEXTBOX.Culture = new System.Globalization.CultureInfo("en-US");
+            this.WIT_MTEXTBOX.Location = new System.Drawing.Point(95, 115);
+            this.WIT_MTEXTBOX.Mask = "000";
+            this.WIT_MTEXTBOX.Name = "WIT_MTEXTBOX";
+            this.WIT_MTEXTBOX.Size = new System.Drawing.Size(50, 26);
+            this.WIT_MTEXTBOX.TabIndex = 15;
+            this.WIT_MTEXTBOX.Text = " 20";
+            // 
+            // MEN_MTEXTBOX
+            // 
+            this.MEN_MTEXTBOX.Culture = new System.Globalization.CultureInfo("en-US");
+            this.MEN_MTEXTBOX.Location = new System.Drawing.Point(95, 155);
+            this.MEN_MTEXTBOX.Mask = "000";
+            this.MEN_MTEXTBOX.Name = "MEN_MTEXTBOX";
+            this.MEN_MTEXTBOX.Size = new System.Drawing.Size(50, 26);
+            this.MEN_MTEXTBOX.TabIndex = 16;
+            this.MEN_MTEXTBOX.Text = " 40";
             // 
             // HOME
             // 
@@ -465,6 +524,7 @@ namespace OriginalL2MagicDmgCalculator
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.WindowFrame;
             this.ClientSize = new System.Drawing.Size(1200, 692);
+            this.Controls.Add(this.TEST_BUTTON);
             this.Controls.Add(this.SKILLS_GROUP);
             this.Controls.Add(this.BUFFS_GROUP);
             this.Controls.Add(this.EQUIPMENT_GROUP);
@@ -527,6 +587,11 @@ namespace OriginalL2MagicDmgCalculator
         private System.Windows.Forms.Label WEAPON_MATAK_LABEL;
         private System.Windows.Forms.Label VALAKAS_EQUIPED_LABEL;
         private System.Windows.Forms.Label SIGIL_EQUIPED_LABEL;
+        private System.Windows.Forms.MaskedTextBox LEVEL_MTEXTBOX;
+        private System.Windows.Forms.Button TEST_BUTTON;
+        private System.Windows.Forms.MaskedTextBox MEN_MTEXTBOX;
+        private System.Windows.Forms.MaskedTextBox WIT_MTEXTBOX;
+        private System.Windows.Forms.MaskedTextBox INT_MTEXTBOX;
     }
 }
 
