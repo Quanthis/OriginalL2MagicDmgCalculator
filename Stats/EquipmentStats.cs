@@ -8,25 +8,19 @@ namespace OriginalL2MagicDmgCalculator.Stats
 {
     public class EquipmentStats : CharacterStats
     {
-        protected readonly string NukeType;
-        protected readonly ushort NukeLevel;
-        protected readonly ushort NukePower;
-        protected readonly string NukeEnchantType;
-        protected readonly sbyte WeaponMasteryLevel;
-        protected readonly bool NukeElementMatches;
-        protected readonly sbyte NukeEnchantPower;
+        protected readonly uint WeaponMAtk;
+        protected readonly bool SigilEquiped;
+        protected readonly bool ValakasEquiped;
+        protected readonly uint AugmentationBoost;
 
-        public EquipmentStats(string nukeType, ushort nukeLevel, ushort nukePower, string nukeEnchantType, sbyte weaponMasteryLevel, bool nukeElementMatches, sbyte nukeEnchantPower,
-            ushort characterLevel, ushort characterInt, ushort characterWit, ushort characterMen, uint characterTotalMatk, string characterClass, ushort characterTotalAttribute) 
+        public EquipmentStats(uint weaponMAtk, bool sigilEquiped, bool valakasEquiped, uint augmentationBoost,
+            ushort characterLevel, ushort characterInt, ushort characterWit, ushort characterMen, uint characterTotalMatk, string characterClass, ushort characterTotalAttribute)
             : base(characterLevel, characterInt, characterWit, characterMen, characterTotalMatk, characterClass, characterTotalAttribute)
         {
-            NukeType = nukeType;
-            NukeLevel = nukeLevel;
-            NukePower = nukePower;
-            NukeEnchantType = nukeEnchantType;
-            WeaponMasteryLevel = weaponMasteryLevel;
-            NukeElementMatches = nukeElementMatches;
-            NukeEnchantPower = nukeEnchantPower;
+            WeaponMAtk = weaponMAtk;
+            SigilEquiped = sigilEquiped;
+            ValakasEquiped = valakasEquiped;
+            AugmentationBoost = augmentationBoost;
         }
     }
 }
