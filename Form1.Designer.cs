@@ -99,6 +99,11 @@ namespace OriginalL2MagicDmgCalculator
             this.BUFF_POWER_MTEXTBOX4 = new System.Windows.Forms.MaskedTextBox();
             this.BUFF_POWER_MTEXTBOX5 = new System.Windows.Forms.MaskedTextBox();
             this.BUFF_POWER_MTEXTBOX6 = new System.Windows.Forms.MaskedTextBox();
+            this.SIGIL_EQUIPED_CHECKBOX = new System.Windows.Forms.CheckBox();
+            this.VALAKAS_EQUIPED_CHECKBOX = new System.Windows.Forms.CheckBox();
+            this.WEAPON_MATAK_MTEXTBOX = new System.Windows.Forms.MaskedTextBox();
+            this.AUGMENT_BOOST_LABEL = new System.Windows.Forms.Label();
+            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
             this.CHARACTER_STATS_GROUP.SuspendLayout();
             this.EQUIPMENT_GROUP.SuspendLayout();
             this.BUFFS_GROUP.SuspendLayout();
@@ -280,6 +285,11 @@ namespace OriginalL2MagicDmgCalculator
             // EQUIPMENT_GROUP
             // 
             this.EQUIPMENT_GROUP.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.EQUIPMENT_GROUP.Controls.Add(this.maskedTextBox1);
+            this.EQUIPMENT_GROUP.Controls.Add(this.AUGMENT_BOOST_LABEL);
+            this.EQUIPMENT_GROUP.Controls.Add(this.WEAPON_MATAK_MTEXTBOX);
+            this.EQUIPMENT_GROUP.Controls.Add(this.VALAKAS_EQUIPED_CHECKBOX);
+            this.EQUIPMENT_GROUP.Controls.Add(this.SIGIL_EQUIPED_CHECKBOX);
             this.EQUIPMENT_GROUP.Controls.Add(this.VALAKAS_EQUIPED_LABEL);
             this.EQUIPMENT_GROUP.Controls.Add(this.SIGIL_EQUIPED_LABEL);
             this.EQUIPMENT_GROUP.Controls.Add(this.WEAPON_MATAK_LABEL);
@@ -800,6 +810,68 @@ namespace OriginalL2MagicDmgCalculator
             this.BUFF_POWER_MTEXTBOX6.Size = new System.Drawing.Size(50, 26);
             this.BUFF_POWER_MTEXTBOX6.TabIndex = 35;
             // 
+            // SIGIL_EQUIPED_CHECKBOX
+            // 
+            this.SIGIL_EQUIPED_CHECKBOX.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.SIGIL_EQUIPED_CHECKBOX.CheckAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.SIGIL_EQUIPED_CHECKBOX.Checked = true;
+            this.SIGIL_EQUIPED_CHECKBOX.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.SIGIL_EQUIPED_CHECKBOX.Location = new System.Drawing.Point(175, 80);
+            this.SIGIL_EQUIPED_CHECKBOX.MaximumSize = new System.Drawing.Size(26, 26);
+            this.SIGIL_EQUIPED_CHECKBOX.MinimumSize = new System.Drawing.Size(26, 26);
+            this.SIGIL_EQUIPED_CHECKBOX.Name = "SIGIL_EQUIPED_CHECKBOX";
+            this.SIGIL_EQUIPED_CHECKBOX.Padding = new System.Windows.Forms.Padding(1);
+            this.SIGIL_EQUIPED_CHECKBOX.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.SIGIL_EQUIPED_CHECKBOX.Size = new System.Drawing.Size(26, 26);
+            this.SIGIL_EQUIPED_CHECKBOX.TabIndex = 24;
+            this.SIGIL_EQUIPED_CHECKBOX.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.SIGIL_EQUIPED_CHECKBOX.UseVisualStyleBackColor = true;
+            // 
+            // VALAKAS_EQUIPED_CHECKBOX
+            // 
+            this.VALAKAS_EQUIPED_CHECKBOX.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.VALAKAS_EQUIPED_CHECKBOX.CheckAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.VALAKAS_EQUIPED_CHECKBOX.Checked = true;
+            this.VALAKAS_EQUIPED_CHECKBOX.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.VALAKAS_EQUIPED_CHECKBOX.Location = new System.Drawing.Point(175, 120);
+            this.VALAKAS_EQUIPED_CHECKBOX.MaximumSize = new System.Drawing.Size(26, 26);
+            this.VALAKAS_EQUIPED_CHECKBOX.MinimumSize = new System.Drawing.Size(26, 26);
+            this.VALAKAS_EQUIPED_CHECKBOX.Name = "VALAKAS_EQUIPED_CHECKBOX";
+            this.VALAKAS_EQUIPED_CHECKBOX.Padding = new System.Windows.Forms.Padding(1);
+            this.VALAKAS_EQUIPED_CHECKBOX.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.VALAKAS_EQUIPED_CHECKBOX.Size = new System.Drawing.Size(26, 26);
+            this.VALAKAS_EQUIPED_CHECKBOX.TabIndex = 25;
+            this.VALAKAS_EQUIPED_CHECKBOX.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.VALAKAS_EQUIPED_CHECKBOX.UseVisualStyleBackColor = true;
+            // 
+            // WEAPON_MATAK_MTEXTBOX
+            // 
+            this.WEAPON_MATAK_MTEXTBOX.Culture = new System.Globalization.CultureInfo("en-US");
+            this.WEAPON_MATAK_MTEXTBOX.Location = new System.Drawing.Point(175, 40);
+            this.WEAPON_MATAK_MTEXTBOX.Mask = "000000";
+            this.WEAPON_MATAK_MTEXTBOX.Name = "WEAPON_MATAK_MTEXTBOX";
+            this.WEAPON_MATAK_MTEXTBOX.Size = new System.Drawing.Size(102, 26);
+            this.WEAPON_MATAK_MTEXTBOX.TabIndex = 20;
+            this.WEAPON_MATAK_MTEXTBOX.Text = "2000";
+            // 
+            // AUGMENT_BOOST_LABEL
+            // 
+            this.AUGMENT_BOOST_LABEL.AutoSize = true;
+            this.AUGMENT_BOOST_LABEL.Location = new System.Drawing.Point(11, 160);
+            this.AUGMENT_BOOST_LABEL.Name = "AUGMENT_BOOST_LABEL";
+            this.AUGMENT_BOOST_LABEL.Size = new System.Drawing.Size(155, 20);
+            this.AUGMENT_BOOST_LABEL.TabIndex = 26;
+            this.AUGMENT_BOOST_LABEL.Text = "Augmentation Boost";
+            // 
+            // maskedTextBox1
+            // 
+            this.maskedTextBox1.Culture = new System.Globalization.CultureInfo("en-US");
+            this.maskedTextBox1.Location = new System.Drawing.Point(175, 160);
+            this.maskedTextBox1.Mask = "0000";
+            this.maskedTextBox1.Name = "maskedTextBox1";
+            this.maskedTextBox1.Size = new System.Drawing.Size(102, 26);
+            this.maskedTextBox1.TabIndex = 24;
+            // 
             // HOME
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -899,6 +971,11 @@ namespace OriginalL2MagicDmgCalculator
         private System.Windows.Forms.MaskedTextBox BUFF_POWER_MTEXTBOX2;
         private System.Windows.Forms.MaskedTextBox BUFF_POWER_MTEXTBOX1;
         private System.Windows.Forms.MaskedTextBox HERO_BERS_MTEXTBOX;
+        private System.Windows.Forms.MaskedTextBox WEAPON_MATAK_MTEXTBOX;
+        private System.Windows.Forms.CheckBox VALAKAS_EQUIPED_CHECKBOX;
+        private System.Windows.Forms.CheckBox SIGIL_EQUIPED_CHECKBOX;
+        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
+        private System.Windows.Forms.Label AUGMENT_BOOST_LABEL;
     }
 }
 
