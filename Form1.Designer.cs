@@ -86,6 +86,19 @@ namespace OriginalL2MagicDmgCalculator
             this.NUKE_ENCHANT_POWER_MTEXTBOX = new System.Windows.Forms.MaskedTextBox();
             this.NUKE_ELE_ALIGN_CHECKBOX = new System.Windows.Forms.CheckBox();
             this.vScrollBar3 = new System.Windows.Forms.VScrollBar();
+            this.BUFF_NAME_TEXBOX1 = new System.Windows.Forms.TextBox();
+            this.BUFF_NAME_TEXBOX2 = new System.Windows.Forms.TextBox();
+            this.BUFF_NAME_TEXBOX3 = new System.Windows.Forms.TextBox();
+            this.BUFF_NAME_TEXBOX4 = new System.Windows.Forms.TextBox();
+            this.BUFF_NAME_TEXBOX5 = new System.Windows.Forms.TextBox();
+            this.BUFF_NAME_TEXBOX6 = new System.Windows.Forms.TextBox();
+            this.HERO_BERS_MTEXTBOX = new System.Windows.Forms.MaskedTextBox();
+            this.BUFF_POWER_MTEXTBOX1 = new System.Windows.Forms.MaskedTextBox();
+            this.BUFF_POWER_MTEXTBOX2 = new System.Windows.Forms.MaskedTextBox();
+            this.BUFF_POWER_MTEXTBOX3 = new System.Windows.Forms.MaskedTextBox();
+            this.BUFF_POWER_MTEXTBOX4 = new System.Windows.Forms.MaskedTextBox();
+            this.BUFF_POWER_MTEXTBOX5 = new System.Windows.Forms.MaskedTextBox();
+            this.BUFF_POWER_MTEXTBOX6 = new System.Windows.Forms.MaskedTextBox();
             this.CHARACTER_STATS_GROUP.SuspendLayout();
             this.EQUIPMENT_GROUP.SuspendLayout();
             this.BUFFS_GROUP.SuspendLayout();
@@ -316,6 +329,19 @@ namespace OriginalL2MagicDmgCalculator
             // BUFFS_GROUP
             // 
             this.BUFFS_GROUP.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.BUFFS_GROUP.Controls.Add(this.BUFF_POWER_MTEXTBOX6);
+            this.BUFFS_GROUP.Controls.Add(this.BUFF_POWER_MTEXTBOX5);
+            this.BUFFS_GROUP.Controls.Add(this.BUFF_POWER_MTEXTBOX4);
+            this.BUFFS_GROUP.Controls.Add(this.BUFF_POWER_MTEXTBOX3);
+            this.BUFFS_GROUP.Controls.Add(this.BUFF_POWER_MTEXTBOX2);
+            this.BUFFS_GROUP.Controls.Add(this.BUFF_POWER_MTEXTBOX1);
+            this.BUFFS_GROUP.Controls.Add(this.HERO_BERS_MTEXTBOX);
+            this.BUFFS_GROUP.Controls.Add(this.BUFF_NAME_TEXBOX6);
+            this.BUFFS_GROUP.Controls.Add(this.BUFF_NAME_TEXBOX5);
+            this.BUFFS_GROUP.Controls.Add(this.BUFF_NAME_TEXBOX4);
+            this.BUFFS_GROUP.Controls.Add(this.BUFF_NAME_TEXBOX3);
+            this.BUFFS_GROUP.Controls.Add(this.BUFF_NAME_TEXBOX2);
+            this.BUFFS_GROUP.Controls.Add(this.BUFF_NAME_TEXBOX1);
             this.BUFFS_GROUP.Controls.Add(this.vScrollBar3);
             this.BUFFS_GROUP.Controls.Add(this.HERO_BERS_LABEL);
             this.BUFFS_GROUP.Controls.Add(this.BUFF_POWER_LABEL6);
@@ -342,9 +368,9 @@ namespace OriginalL2MagicDmgCalculator
             this.HERO_BERS_LABEL.AutoSize = true;
             this.HERO_BERS_LABEL.Location = new System.Drawing.Point(11, 212);
             this.HERO_BERS_LABEL.Name = "HERO_BERS_LABEL";
-            this.HERO_BERS_LABEL.Size = new System.Drawing.Size(128, 20);
+            this.HERO_BERS_LABEL.Size = new System.Drawing.Size(223, 20);
             this.HERO_BERS_LABEL.TabIndex = 13;
-            this.HERO_BERS_LABEL.Text = "Heroic Berserker";
+            this.HERO_BERS_LABEL.Text = "Heroic Berserker M.Atk. Boost";
             // 
             // BUFF_POWER_LABEL6
             // 
@@ -657,6 +683,123 @@ namespace OriginalL2MagicDmgCalculator
             this.vScrollBar3.Size = new System.Drawing.Size(20, 239);
             this.vScrollBar3.TabIndex = 24;
             // 
+            // BUFF_NAME_TEXBOX1
+            // 
+            this.BUFF_NAME_TEXBOX1.Location = new System.Drawing.Point(152, 32);
+            this.BUFF_NAME_TEXBOX1.MaxLength = 30;
+            this.BUFF_NAME_TEXBOX1.Name = "BUFF_NAME_TEXBOX1";
+            this.BUFF_NAME_TEXBOX1.Size = new System.Drawing.Size(186, 26);
+            this.BUFF_NAME_TEXBOX1.TabIndex = 25;
+            // 
+            // BUFF_NAME_TEXBOX2
+            // 
+            this.BUFF_NAME_TEXBOX2.Location = new System.Drawing.Point(152, 62);
+            this.BUFF_NAME_TEXBOX2.MaxLength = 30;
+            this.BUFF_NAME_TEXBOX2.Name = "BUFF_NAME_TEXBOX2";
+            this.BUFF_NAME_TEXBOX2.Size = new System.Drawing.Size(186, 26);
+            this.BUFF_NAME_TEXBOX2.TabIndex = 26;
+            // 
+            // BUFF_NAME_TEXBOX3
+            // 
+            this.BUFF_NAME_TEXBOX3.Location = new System.Drawing.Point(152, 92);
+            this.BUFF_NAME_TEXBOX3.MaxLength = 30;
+            this.BUFF_NAME_TEXBOX3.Name = "BUFF_NAME_TEXBOX3";
+            this.BUFF_NAME_TEXBOX3.Size = new System.Drawing.Size(186, 26);
+            this.BUFF_NAME_TEXBOX3.TabIndex = 27;
+            // 
+            // BUFF_NAME_TEXBOX4
+            // 
+            this.BUFF_NAME_TEXBOX4.Location = new System.Drawing.Point(152, 122);
+            this.BUFF_NAME_TEXBOX4.MaxLength = 30;
+            this.BUFF_NAME_TEXBOX4.Name = "BUFF_NAME_TEXBOX4";
+            this.BUFF_NAME_TEXBOX4.Size = new System.Drawing.Size(186, 26);
+            this.BUFF_NAME_TEXBOX4.TabIndex = 28;
+            // 
+            // BUFF_NAME_TEXBOX5
+            // 
+            this.BUFF_NAME_TEXBOX5.Location = new System.Drawing.Point(152, 152);
+            this.BUFF_NAME_TEXBOX5.MaxLength = 30;
+            this.BUFF_NAME_TEXBOX5.Name = "BUFF_NAME_TEXBOX5";
+            this.BUFF_NAME_TEXBOX5.Size = new System.Drawing.Size(186, 26);
+            this.BUFF_NAME_TEXBOX5.TabIndex = 29;
+            // 
+            // BUFF_NAME_TEXBOX6
+            // 
+            this.BUFF_NAME_TEXBOX6.Location = new System.Drawing.Point(152, 182);
+            this.BUFF_NAME_TEXBOX6.MaxLength = 30;
+            this.BUFF_NAME_TEXBOX6.Name = "BUFF_NAME_TEXBOX6";
+            this.BUFF_NAME_TEXBOX6.Size = new System.Drawing.Size(186, 26);
+            this.BUFF_NAME_TEXBOX6.TabIndex = 30;
+            // 
+            // HERO_BERS_MTEXTBOX
+            // 
+            this.HERO_BERS_MTEXTBOX.Culture = new System.Globalization.CultureInfo("en-US");
+            this.HERO_BERS_MTEXTBOX.Location = new System.Drawing.Point(236, 212);
+            this.HERO_BERS_MTEXTBOX.Mask = "00000";
+            this.HERO_BERS_MTEXTBOX.Name = "HERO_BERS_MTEXTBOX";
+            this.HERO_BERS_MTEXTBOX.Size = new System.Drawing.Size(102, 26);
+            this.HERO_BERS_MTEXTBOX.TabIndex = 24;
+            this.HERO_BERS_MTEXTBOX.Text = "  500";
+            // 
+            // BUFF_POWER_MTEXTBOX1
+            // 
+            this.BUFF_POWER_MTEXTBOX1.Culture = new System.Globalization.CultureInfo("en-US");
+            this.BUFF_POWER_MTEXTBOX1.Location = new System.Drawing.Point(496, 32);
+            this.BUFF_POWER_MTEXTBOX1.Mask = "000";
+            this.BUFF_POWER_MTEXTBOX1.Name = "BUFF_POWER_MTEXTBOX1";
+            this.BUFF_POWER_MTEXTBOX1.Size = new System.Drawing.Size(50, 26);
+            this.BUFF_POWER_MTEXTBOX1.TabIndex = 20;
+            this.BUFF_POWER_MTEXTBOX1.Text = " 75";
+            // 
+            // BUFF_POWER_MTEXTBOX2
+            // 
+            this.BUFF_POWER_MTEXTBOX2.Culture = new System.Globalization.CultureInfo("en-US");
+            this.BUFF_POWER_MTEXTBOX2.Location = new System.Drawing.Point(496, 62);
+            this.BUFF_POWER_MTEXTBOX2.Mask = "000";
+            this.BUFF_POWER_MTEXTBOX2.Name = "BUFF_POWER_MTEXTBOX2";
+            this.BUFF_POWER_MTEXTBOX2.Size = new System.Drawing.Size(50, 26);
+            this.BUFF_POWER_MTEXTBOX2.TabIndex = 31;
+            this.BUFF_POWER_MTEXTBOX2.Text = " 16";
+            // 
+            // BUFF_POWER_MTEXTBOX3
+            // 
+            this.BUFF_POWER_MTEXTBOX3.Culture = new System.Globalization.CultureInfo("en-US");
+            this.BUFF_POWER_MTEXTBOX3.Location = new System.Drawing.Point(496, 92);
+            this.BUFF_POWER_MTEXTBOX3.Mask = "000";
+            this.BUFF_POWER_MTEXTBOX3.Name = "BUFF_POWER_MTEXTBOX3";
+            this.BUFF_POWER_MTEXTBOX3.Size = new System.Drawing.Size(50, 26);
+            this.BUFF_POWER_MTEXTBOX3.TabIndex = 32;
+            this.BUFF_POWER_MTEXTBOX3.Text = " 20";
+            // 
+            // BUFF_POWER_MTEXTBOX4
+            // 
+            this.BUFF_POWER_MTEXTBOX4.Culture = new System.Globalization.CultureInfo("en-US");
+            this.BUFF_POWER_MTEXTBOX4.Location = new System.Drawing.Point(496, 122);
+            this.BUFF_POWER_MTEXTBOX4.Mask = "000";
+            this.BUFF_POWER_MTEXTBOX4.Name = "BUFF_POWER_MTEXTBOX4";
+            this.BUFF_POWER_MTEXTBOX4.Size = new System.Drawing.Size(50, 26);
+            this.BUFF_POWER_MTEXTBOX4.TabIndex = 33;
+            this.BUFF_POWER_MTEXTBOX4.Text = " 20";
+            // 
+            // BUFF_POWER_MTEXTBOX5
+            // 
+            this.BUFF_POWER_MTEXTBOX5.Culture = new System.Globalization.CultureInfo("en-US");
+            this.BUFF_POWER_MTEXTBOX5.Location = new System.Drawing.Point(496, 152);
+            this.BUFF_POWER_MTEXTBOX5.Mask = "000";
+            this.BUFF_POWER_MTEXTBOX5.Name = "BUFF_POWER_MTEXTBOX5";
+            this.BUFF_POWER_MTEXTBOX5.Size = new System.Drawing.Size(50, 26);
+            this.BUFF_POWER_MTEXTBOX5.TabIndex = 34;
+            this.BUFF_POWER_MTEXTBOX5.Text = " 30";
+            // 
+            // BUFF_POWER_MTEXTBOX6
+            // 
+            this.BUFF_POWER_MTEXTBOX6.Culture = new System.Globalization.CultureInfo("en-US");
+            this.BUFF_POWER_MTEXTBOX6.Location = new System.Drawing.Point(496, 182);
+            this.BUFF_POWER_MTEXTBOX6.Mask = "000";
+            this.BUFF_POWER_MTEXTBOX6.Name = "BUFF_POWER_MTEXTBOX6";
+            this.BUFF_POWER_MTEXTBOX6.Size = new System.Drawing.Size(50, 26);
+            this.BUFF_POWER_MTEXTBOX6.TabIndex = 35;
+            // 
             // HOME
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -743,6 +886,19 @@ namespace OriginalL2MagicDmgCalculator
         private System.Windows.Forms.MaskedTextBox NUKE_ENCHANT_POWER_MTEXTBOX;
         private System.Windows.Forms.CheckBox NUKE_ELE_ALIGN_CHECKBOX;
         private System.Windows.Forms.VScrollBar vScrollBar3;
+        private System.Windows.Forms.TextBox BUFF_NAME_TEXBOX6;
+        private System.Windows.Forms.TextBox BUFF_NAME_TEXBOX5;
+        private System.Windows.Forms.TextBox BUFF_NAME_TEXBOX4;
+        private System.Windows.Forms.TextBox BUFF_NAME_TEXBOX3;
+        private System.Windows.Forms.TextBox BUFF_NAME_TEXBOX2;
+        private System.Windows.Forms.TextBox BUFF_NAME_TEXBOX1;
+        private System.Windows.Forms.MaskedTextBox BUFF_POWER_MTEXTBOX6;
+        private System.Windows.Forms.MaskedTextBox BUFF_POWER_MTEXTBOX5;
+        private System.Windows.Forms.MaskedTextBox BUFF_POWER_MTEXTBOX4;
+        private System.Windows.Forms.MaskedTextBox BUFF_POWER_MTEXTBOX3;
+        private System.Windows.Forms.MaskedTextBox BUFF_POWER_MTEXTBOX2;
+        private System.Windows.Forms.MaskedTextBox BUFF_POWER_MTEXTBOX1;
+        private System.Windows.Forms.MaskedTextBox HERO_BERS_MTEXTBOX;
     }
 }
 
