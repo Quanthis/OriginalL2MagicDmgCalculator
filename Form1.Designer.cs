@@ -538,9 +538,9 @@ namespace OriginalL2MagicDmgCalculator
             this.NUKE_ELE_ALIGN_LABEL.AutoSize = true;
             this.NUKE_ELE_ALIGN_LABEL.Location = new System.Drawing.Point(283, 80);
             this.NUKE_ELE_ALIGN_LABEL.Name = "NUKE_ELE_ALIGN_LABEL";
-            this.NUKE_ELE_ALIGN_LABEL.Size = new System.Drawing.Size(239, 20);
+            this.NUKE_ELE_ALIGN_LABEL.Size = new System.Drawing.Size(235, 20);
             this.NUKE_ELE_ALIGN_LABEL.TabIndex = 6;
-            this.NUKE_ELE_ALIGN_LABEL.Text = "Nuke same elemenT as weapon:";
+            this.NUKE_ELE_ALIGN_LABEL.Text = "Nuke same element as weapon:";
             // 
             // NUKE_ENCHANT_POWER_LABEL
             // 
