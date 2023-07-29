@@ -104,6 +104,8 @@ namespace OriginalL2MagicDmgCalculator
             this.WEAPON_MATAK_MTEXTBOX = new System.Windows.Forms.MaskedTextBox();
             this.AUGMENT_BOOST_LABEL = new System.Windows.Forms.Label();
             this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
+            this.DEALT_DAMAGE_MTEXTBOX = new System.Windows.Forms.MaskedTextBox();
+            this.DEALT_DAMAGE_LABEL = new System.Windows.Forms.Label();
             this.CHARACTER_STATS_GROUP.SuspendLayout();
             this.EQUIPMENT_GROUP.SuspendLayout();
             this.BUFFS_GROUP.SuspendLayout();
@@ -598,7 +600,7 @@ namespace OriginalL2MagicDmgCalculator
             // 
             // TEST_BUTTON
             // 
-            this.TEST_BUTTON.Location = new System.Drawing.Point(439, 305);
+            this.TEST_BUTTON.Location = new System.Drawing.Point(222, 296);
             this.TEST_BUTTON.Name = "TEST_BUTTON";
             this.TEST_BUTTON.Size = new System.Drawing.Size(138, 27);
             this.TEST_BUTTON.TabIndex = 4;
@@ -872,12 +874,34 @@ namespace OriginalL2MagicDmgCalculator
             this.maskedTextBox1.Size = new System.Drawing.Size(102, 26);
             this.maskedTextBox1.TabIndex = 24;
             // 
+            // DEALT_DAMAGE_MTEXTBOX
+            // 
+            this.DEALT_DAMAGE_MTEXTBOX.Culture = new System.Globalization.CultureInfo("en-US");
+            this.DEALT_DAMAGE_MTEXTBOX.Location = new System.Drawing.Point(448, 330);
+            this.DEALT_DAMAGE_MTEXTBOX.Mask = "000000000.00";
+            this.DEALT_DAMAGE_MTEXTBOX.MinimumSize = new System.Drawing.Size(112, 26);
+            this.DEALT_DAMAGE_MTEXTBOX.Name = "DEALT_DAMAGE_MTEXTBOX";
+            this.DEALT_DAMAGE_MTEXTBOX.Size = new System.Drawing.Size(112, 26);
+            this.DEALT_DAMAGE_MTEXTBOX.TabIndex = 20;
+            // 
+            // DEALT_DAMAGE_LABEL
+            // 
+            this.DEALT_DAMAGE_LABEL.AutoSize = true;
+            this.DEALT_DAMAGE_LABEL.ForeColor = System.Drawing.Color.White;
+            this.DEALT_DAMAGE_LABEL.Location = new System.Drawing.Point(435, 300);
+            this.DEALT_DAMAGE_LABEL.Name = "DEALT_DAMAGE_LABEL";
+            this.DEALT_DAMAGE_LABEL.Size = new System.Drawing.Size(140, 20);
+            this.DEALT_DAMAGE_LABEL.TabIndex = 20;
+            this.DEALT_DAMAGE_LABEL.Text = "DEALT DAMAGE:";
+            // 
             // HOME
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.WindowFrame;
             this.ClientSize = new System.Drawing.Size(1200, 692);
+            this.Controls.Add(this.DEALT_DAMAGE_LABEL);
+            this.Controls.Add(this.DEALT_DAMAGE_MTEXTBOX);
             this.Controls.Add(this.TEST_BUTTON);
             this.Controls.Add(this.SKILLS_GROUP);
             this.Controls.Add(this.BUFFS_GROUP);
@@ -897,6 +921,7 @@ namespace OriginalL2MagicDmgCalculator
             this.SKILLS_GROUP.ResumeLayout(false);
             this.SKILLS_GROUP.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -976,6 +1001,8 @@ namespace OriginalL2MagicDmgCalculator
         private System.Windows.Forms.CheckBox SIGIL_EQUIPED_CHECKBOX;
         private System.Windows.Forms.MaskedTextBox maskedTextBox1;
         private System.Windows.Forms.Label AUGMENT_BOOST_LABEL;
+        private System.Windows.Forms.MaskedTextBox DEALT_DAMAGE_MTEXTBOX;
+        private System.Windows.Forms.Label DEALT_DAMAGE_LABEL;
     }
 }
 
