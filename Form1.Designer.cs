@@ -74,6 +74,9 @@ namespace OriginalL2MagicDmgCalculator
             this.INT_MTEXTBOX = new System.Windows.Forms.MaskedTextBox();
             this.WIT_MTEXTBOX = new System.Windows.Forms.MaskedTextBox();
             this.MEN_MTEXTBOX = new System.Windows.Forms.MaskedTextBox();
+            this.MATK_MTEXTBOX = new System.Windows.Forms.MaskedTextBox();
+            this.ATTRIBUTE_MTEXTBOX = new System.Windows.Forms.MaskedTextBox();
+            this.CLASS_TEXTBOX = new System.Windows.Forms.TextBox();
             this.CHARACTER_STATS_GROUP.SuspendLayout();
             this.EQUIPMENT_GROUP.SuspendLayout();
             this.BUFFS_GROUP.SuspendLayout();
@@ -83,6 +86,9 @@ namespace OriginalL2MagicDmgCalculator
             // CHARACTER_STATS_GROUP
             // 
             this.CHARACTER_STATS_GROUP.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.CHARACTER_STATS_GROUP.Controls.Add(this.CLASS_TEXTBOX);
+            this.CHARACTER_STATS_GROUP.Controls.Add(this.ATTRIBUTE_MTEXTBOX);
+            this.CHARACTER_STATS_GROUP.Controls.Add(this.MATK_MTEXTBOX);
             this.CHARACTER_STATS_GROUP.Controls.Add(this.MEN_MTEXTBOX);
             this.CHARACTER_STATS_GROUP.Controls.Add(this.WIT_MTEXTBOX);
             this.CHARACTER_STATS_GROUP.Controls.Add(this.INT_MTEXTBOX);
@@ -518,6 +524,33 @@ namespace OriginalL2MagicDmgCalculator
             this.MEN_MTEXTBOX.TabIndex = 16;
             this.MEN_MTEXTBOX.Text = " 40";
             // 
+            // MATK_MTEXTBOX
+            // 
+            this.MATK_MTEXTBOX.Culture = new System.Globalization.CultureInfo("en-US");
+            this.MATK_MTEXTBOX.Location = new System.Drawing.Point(270, 75);
+            this.MATK_MTEXTBOX.Mask = "000000";
+            this.MATK_MTEXTBOX.Name = "MATK_MTEXTBOX";
+            this.MATK_MTEXTBOX.Size = new System.Drawing.Size(102, 26);
+            this.MATK_MTEXTBOX.TabIndex = 17;
+            this.MATK_MTEXTBOX.Text = "2000";
+            // 
+            // ATTRIBUTE_MTEXTBOX
+            // 
+            this.ATTRIBUTE_MTEXTBOX.Culture = new System.Globalization.CultureInfo("en-US");
+            this.ATTRIBUTE_MTEXTBOX.Location = new System.Drawing.Point(270, 155);
+            this.ATTRIBUTE_MTEXTBOX.Mask = "0000";
+            this.ATTRIBUTE_MTEXTBOX.Name = "ATTRIBUTE_MTEXTBOX";
+            this.ATTRIBUTE_MTEXTBOX.Size = new System.Drawing.Size(102, 26);
+            this.ATTRIBUTE_MTEXTBOX.TabIndex = 18;
+            this.ATTRIBUTE_MTEXTBOX.Text = " 150";
+            // 
+            // CLASS_TEXTBOX
+            // 
+            this.CLASS_TEXTBOX.Location = new System.Drawing.Point(270, 115);
+            this.CLASS_TEXTBOX.Name = "CLASS_TEXTBOX";
+            this.CLASS_TEXTBOX.Size = new System.Drawing.Size(100, 26);
+            this.CLASS_TEXTBOX.TabIndex = 19;
+            // 
             // HOME
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -592,6 +625,9 @@ namespace OriginalL2MagicDmgCalculator
         private System.Windows.Forms.MaskedTextBox MEN_MTEXTBOX;
         private System.Windows.Forms.MaskedTextBox WIT_MTEXTBOX;
         private System.Windows.Forms.MaskedTextBox INT_MTEXTBOX;
+        private System.Windows.Forms.TextBox CLASS_TEXTBOX;
+        private System.Windows.Forms.MaskedTextBox ATTRIBUTE_MTEXTBOX;
+        private System.Windows.Forms.MaskedTextBox MATK_MTEXTBOX;
     }
 }
 

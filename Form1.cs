@@ -29,13 +29,15 @@ namespace OriginalL2MagicDmgCalculator
         /// </param>
         private async void TEST_BUTTON_Click(object sender, EventArgs e)
         {
-            /* // This works nicely, spaces are not actually part of the string
+             // This works nicely, spaces are not actually part of the string- except for null, that's still a problem
             string test = LEVEL_MTEXTBOX.Text;
             Trace.WriteLine("Recognized length: " + test.Length);
 
             int content = Convert.ToInt32(LEVEL_MTEXTBOX.Text);
             Trace.WriteLine("Content: " + content);
-            */
+
+            int contentBy2 = content / 2;
+            Trace.WriteLine("Content by 2: " + contentBy2);
         }
     }
 }
