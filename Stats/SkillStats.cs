@@ -28,5 +28,28 @@ namespace OriginalL2MagicDmgCalculator.Stats
             NukeElementMatches = nukeElementMatches;
             NukeEnchantPower = nukeEnchantPower;
         }
+
+        public SkillStats(string nukeType, ushort nukeLevel, ushort nukePower, string nukeEnchantType, sbyte weaponMasteryLevel, bool nukeElementMatches, sbyte nukeEnchantPower, 
+            EquipmentStats equipmentStats) : base (equipmentStats)
+        {
+            NukeType = nukeType;
+            NukeLevel = nukeLevel;
+            NukePower = nukePower;
+            NukeEnchantType = nukeEnchantType;
+            WeaponMasteryLevel = weaponMasteryLevel;
+            NukeElementMatches = nukeElementMatches;
+            NukeEnchantPower = nukeEnchantPower;
+        }
+
+        public SkillStats(SkillStats skillStats) : base(skillStats)
+        {
+            NukeType = skillStats.NukeType;
+            NukeLevel = skillStats.NukeLevel;
+            NukePower = skillStats.NukePower;
+            NukeEnchantType = skillStats.NukeEnchantType;
+            WeaponMasteryLevel = skillStats.WeaponMasteryLevel;
+            NukeElementMatches = skillStats.NukeElementMatches;
+            NukeEnchantPower = skillStats.NukeEnchantPower;
+        }
     }
 }

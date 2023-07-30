@@ -22,5 +22,31 @@ namespace OriginalL2MagicDmgCalculator.Stats
             ValakasEquiped = valakasEquiped;
             AugmentationBoost = augmentationBoost;
         }
+
+        public EquipmentStats(uint weaponMAtk, bool sigilEquiped, bool valakasEquiped, uint augmentationBoost, CharacterStats characterStats) : base (characterStats)
+        {
+            WeaponMAtk = weaponMAtk;
+            SigilEquiped = sigilEquiped;
+            ValakasEquiped = valakasEquiped;
+            AugmentationBoost = augmentationBoost;
+        }
+
+
+        public EquipmentStats(EquipmentStats equipmentStats, CharacterStats characterStats) : base(characterStats)
+        {
+            WeaponMAtk = equipmentStats.WeaponMAtk;
+            SigilEquiped = equipmentStats.SigilEquiped;
+            ValakasEquiped = equipmentStats.ValakasEquiped;
+            AugmentationBoost = equipmentStats.AugmentationBoost;
+        }
+
+        public EquipmentStats(EquipmentStats equipmentStats)
+            : base (equipmentStats)
+        {
+            WeaponMAtk = equipmentStats.WeaponMAtk;
+            SigilEquiped = equipmentStats.SigilEquiped;
+            ValakasEquiped = equipmentStats.ValakasEquiped;
+            AugmentationBoost = equipmentStats.AugmentationBoost;
+        }
     }
 }

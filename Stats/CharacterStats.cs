@@ -26,5 +26,16 @@ namespace OriginalL2MagicDmgCalculator.Stats
             CharacterClass = characterClass;
             CharacterTotalAttribute = characterTotalAttribute;
         }
+
+        public CharacterStats(CharacterStats characterStats)
+        {
+            CharacterLevel = characterStats.CharacterLevel;
+            CharacterInt = characterStats.CharacterInt;
+            CharacterWit = characterStats.CharacterWit;
+            CharacterMen = characterStats.CharacterMen;
+            CharacterTotalMatk = characterStats.CharacterTotalMatk;
+            CharacterClass = characterStats.CharacterClass;
+            CharacterTotalAttribute = characterStats.CharacterTotalAttribute;
+        }
     }
 }

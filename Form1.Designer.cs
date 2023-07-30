@@ -48,11 +48,30 @@ namespace OriginalL2MagicDmgCalculator
             this.CHARACTER_STATS_LABEL = new System.Windows.Forms.Label();
             this.vScrollBar1 = new System.Windows.Forms.VScrollBar();
             this.EQUIPMENT_GROUP = new System.Windows.Forms.Panel();
+            this.AUGMENTATION_BOOST_MTEXTBOX = new System.Windows.Forms.MaskedTextBox();
+            this.AUGMENT_BOOST_LABEL = new System.Windows.Forms.Label();
+            this.WEAPON_MATAK_MTEXTBOX = new System.Windows.Forms.MaskedTextBox();
+            this.VALAKAS_EQUIPED_CHECKBOX = new System.Windows.Forms.CheckBox();
+            this.SIGIL_EQUIPED_CHECKBOX = new System.Windows.Forms.CheckBox();
             this.VALAKAS_EQUIPED_LABEL = new System.Windows.Forms.Label();
             this.SIGIL_EQUIPED_LABEL = new System.Windows.Forms.Label();
             this.WEAPON_MATAK_LABEL = new System.Windows.Forms.Label();
             this.EQUIPMENT_LABEL = new System.Windows.Forms.Label();
             this.BUFFS_GROUP = new System.Windows.Forms.Panel();
+            this.BUFF_POWER_MTEXTBOX6 = new System.Windows.Forms.MaskedTextBox();
+            this.BUFF_POWER_MTEXTBOX5 = new System.Windows.Forms.MaskedTextBox();
+            this.BUFF_POWER_MTEXTBOX4 = new System.Windows.Forms.MaskedTextBox();
+            this.BUFF_POWER_MTEXTBOX3 = new System.Windows.Forms.MaskedTextBox();
+            this.BUFF_POWER_MTEXTBOX2 = new System.Windows.Forms.MaskedTextBox();
+            this.BUFF_POWER_MTEXTBOX1 = new System.Windows.Forms.MaskedTextBox();
+            this.HERO_BERS_MTEXTBOX = new System.Windows.Forms.MaskedTextBox();
+            this.BUFF_NAME_TEXBOX6 = new System.Windows.Forms.TextBox();
+            this.BUFF_NAME_TEXBOX5 = new System.Windows.Forms.TextBox();
+            this.BUFF_NAME_TEXBOX4 = new System.Windows.Forms.TextBox();
+            this.BUFF_NAME_TEXBOX3 = new System.Windows.Forms.TextBox();
+            this.BUFF_NAME_TEXBOX2 = new System.Windows.Forms.TextBox();
+            this.BUFF_NAME_TEXBOX1 = new System.Windows.Forms.TextBox();
+            this.vScrollBar3 = new System.Windows.Forms.VScrollBar();
             this.HERO_BERS_LABEL = new System.Windows.Forms.Label();
             this.BUFF_POWER_LABEL6 = new System.Windows.Forms.Label();
             this.BUFF_POWER_LABEL5 = new System.Windows.Forms.Label();
@@ -68,6 +87,14 @@ namespace OriginalL2MagicDmgCalculator
             this.BUFF_NAME_LABEL1 = new System.Windows.Forms.Label();
             this.BUFFS_LABEL = new System.Windows.Forms.Label();
             this.SKILLS_GROUP = new System.Windows.Forms.Panel();
+            this.NUKE_ELE_ALIGN_CHECKBOX = new System.Windows.Forms.CheckBox();
+            this.NUKE_ENCHANT_POWER_MTEXTBOX = new System.Windows.Forms.MaskedTextBox();
+            this.NUKE_ENCHANT_TYPE_TEXTBOX = new System.Windows.Forms.TextBox();
+            this.WEAPON_MASTERY_LV_MTEXTBOX = new System.Windows.Forms.MaskedTextBox();
+            this.NUKE_POWER_MTEXTBOX = new System.Windows.Forms.MaskedTextBox();
+            this.NUKE_LEVEL_MTEXTBOX = new System.Windows.Forms.MaskedTextBox();
+            this.vScrollBar2 = new System.Windows.Forms.VScrollBar();
+            this.NUKTE_TYPE_TEXTBOX = new System.Windows.Forms.TextBox();
             this.WEAPON_MASTERY_LEVEL_LABEL = new System.Windows.Forms.Label();
             this.NUKE_ELE_ALIGN_LABEL = new System.Windows.Forms.Label();
             this.NUKE_ENCHANT_POWER_LABEL = new System.Windows.Forms.Label();
@@ -77,33 +104,6 @@ namespace OriginalL2MagicDmgCalculator
             this.NUKE_TYPE_LABEL = new System.Windows.Forms.Label();
             this.SKILLS_LABEL = new System.Windows.Forms.Label();
             this.TEST_BUTTON = new System.Windows.Forms.Button();
-            this.NUKTE_TYPE_TEXTBOX = new System.Windows.Forms.TextBox();
-            this.vScrollBar2 = new System.Windows.Forms.VScrollBar();
-            this.NUKE_LEVEL_MTEXTBOX = new System.Windows.Forms.MaskedTextBox();
-            this.NUKE_POWER_MTEXTBOX = new System.Windows.Forms.MaskedTextBox();
-            this.WEAPON_MASTERY_LV_MTEXTBOX = new System.Windows.Forms.MaskedTextBox();
-            this.NUKE_ENCHANT_TYPE_TEXTBOX = new System.Windows.Forms.TextBox();
-            this.NUKE_ENCHANT_POWER_MTEXTBOX = new System.Windows.Forms.MaskedTextBox();
-            this.NUKE_ELE_ALIGN_CHECKBOX = new System.Windows.Forms.CheckBox();
-            this.vScrollBar3 = new System.Windows.Forms.VScrollBar();
-            this.BUFF_NAME_TEXBOX1 = new System.Windows.Forms.TextBox();
-            this.BUFF_NAME_TEXBOX2 = new System.Windows.Forms.TextBox();
-            this.BUFF_NAME_TEXBOX3 = new System.Windows.Forms.TextBox();
-            this.BUFF_NAME_TEXBOX4 = new System.Windows.Forms.TextBox();
-            this.BUFF_NAME_TEXBOX5 = new System.Windows.Forms.TextBox();
-            this.BUFF_NAME_TEXBOX6 = new System.Windows.Forms.TextBox();
-            this.HERO_BERS_MTEXTBOX = new System.Windows.Forms.MaskedTextBox();
-            this.BUFF_POWER_MTEXTBOX1 = new System.Windows.Forms.MaskedTextBox();
-            this.BUFF_POWER_MTEXTBOX2 = new System.Windows.Forms.MaskedTextBox();
-            this.BUFF_POWER_MTEXTBOX3 = new System.Windows.Forms.MaskedTextBox();
-            this.BUFF_POWER_MTEXTBOX4 = new System.Windows.Forms.MaskedTextBox();
-            this.BUFF_POWER_MTEXTBOX5 = new System.Windows.Forms.MaskedTextBox();
-            this.BUFF_POWER_MTEXTBOX6 = new System.Windows.Forms.MaskedTextBox();
-            this.SIGIL_EQUIPED_CHECKBOX = new System.Windows.Forms.CheckBox();
-            this.VALAKAS_EQUIPED_CHECKBOX = new System.Windows.Forms.CheckBox();
-            this.WEAPON_MATAK_MTEXTBOX = new System.Windows.Forms.MaskedTextBox();
-            this.AUGMENT_BOOST_LABEL = new System.Windows.Forms.Label();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
             this.DEALT_DAMAGE_MTEXTBOX = new System.Windows.Forms.MaskedTextBox();
             this.DEALT_DAMAGE_LABEL = new System.Windows.Forms.Label();
             this.SAVE_TO_BASE_BUTTON = new System.Windows.Forms.Button();
@@ -288,7 +288,7 @@ namespace OriginalL2MagicDmgCalculator
             // EQUIPMENT_GROUP
             // 
             this.EQUIPMENT_GROUP.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.EQUIPMENT_GROUP.Controls.Add(this.maskedTextBox1);
+            this.EQUIPMENT_GROUP.Controls.Add(this.AUGMENTATION_BOOST_MTEXTBOX);
             this.EQUIPMENT_GROUP.Controls.Add(this.AUGMENT_BOOST_LABEL);
             this.EQUIPMENT_GROUP.Controls.Add(this.WEAPON_MATAK_MTEXTBOX);
             this.EQUIPMENT_GROUP.Controls.Add(this.VALAKAS_EQUIPED_CHECKBOX);
@@ -302,6 +302,68 @@ namespace OriginalL2MagicDmgCalculator
             this.EQUIPMENT_GROUP.Name = "EQUIPMENT_GROUP";
             this.EQUIPMENT_GROUP.Size = new System.Drawing.Size(397, 239);
             this.EQUIPMENT_GROUP.TabIndex = 1;
+            // 
+            // AUGMENTATION_BOOST_MTEXTBOX
+            // 
+            this.AUGMENTATION_BOOST_MTEXTBOX.Culture = new System.Globalization.CultureInfo("en-US");
+            this.AUGMENTATION_BOOST_MTEXTBOX.Location = new System.Drawing.Point(175, 160);
+            this.AUGMENTATION_BOOST_MTEXTBOX.Mask = "0000";
+            this.AUGMENTATION_BOOST_MTEXTBOX.Name = "AUGMENTATION_BOOST_MTEXTBOX";
+            this.AUGMENTATION_BOOST_MTEXTBOX.Size = new System.Drawing.Size(102, 26);
+            this.AUGMENTATION_BOOST_MTEXTBOX.TabIndex = 24;
+            // 
+            // AUGMENT_BOOST_LABEL
+            // 
+            this.AUGMENT_BOOST_LABEL.AutoSize = true;
+            this.AUGMENT_BOOST_LABEL.Location = new System.Drawing.Point(11, 160);
+            this.AUGMENT_BOOST_LABEL.Name = "AUGMENT_BOOST_LABEL";
+            this.AUGMENT_BOOST_LABEL.Size = new System.Drawing.Size(155, 20);
+            this.AUGMENT_BOOST_LABEL.TabIndex = 26;
+            this.AUGMENT_BOOST_LABEL.Text = "Augmentation Boost";
+            // 
+            // WEAPON_MATAK_MTEXTBOX
+            // 
+            this.WEAPON_MATAK_MTEXTBOX.Culture = new System.Globalization.CultureInfo("en-US");
+            this.WEAPON_MATAK_MTEXTBOX.Location = new System.Drawing.Point(175, 40);
+            this.WEAPON_MATAK_MTEXTBOX.Mask = "000000";
+            this.WEAPON_MATAK_MTEXTBOX.Name = "WEAPON_MATAK_MTEXTBOX";
+            this.WEAPON_MATAK_MTEXTBOX.Size = new System.Drawing.Size(102, 26);
+            this.WEAPON_MATAK_MTEXTBOX.TabIndex = 20;
+            this.WEAPON_MATAK_MTEXTBOX.Text = "2000";
+            // 
+            // VALAKAS_EQUIPED_CHECKBOX
+            // 
+            this.VALAKAS_EQUIPED_CHECKBOX.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.VALAKAS_EQUIPED_CHECKBOX.CheckAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.VALAKAS_EQUIPED_CHECKBOX.Checked = true;
+            this.VALAKAS_EQUIPED_CHECKBOX.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.VALAKAS_EQUIPED_CHECKBOX.Location = new System.Drawing.Point(175, 120);
+            this.VALAKAS_EQUIPED_CHECKBOX.MaximumSize = new System.Drawing.Size(26, 26);
+            this.VALAKAS_EQUIPED_CHECKBOX.MinimumSize = new System.Drawing.Size(26, 26);
+            this.VALAKAS_EQUIPED_CHECKBOX.Name = "VALAKAS_EQUIPED_CHECKBOX";
+            this.VALAKAS_EQUIPED_CHECKBOX.Padding = new System.Windows.Forms.Padding(1);
+            this.VALAKAS_EQUIPED_CHECKBOX.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.VALAKAS_EQUIPED_CHECKBOX.Size = new System.Drawing.Size(26, 26);
+            this.VALAKAS_EQUIPED_CHECKBOX.TabIndex = 25;
+            this.VALAKAS_EQUIPED_CHECKBOX.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.VALAKAS_EQUIPED_CHECKBOX.UseVisualStyleBackColor = true;
+            // 
+            // SIGIL_EQUIPED_CHECKBOX
+            // 
+            this.SIGIL_EQUIPED_CHECKBOX.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.SIGIL_EQUIPED_CHECKBOX.CheckAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.SIGIL_EQUIPED_CHECKBOX.Checked = true;
+            this.SIGIL_EQUIPED_CHECKBOX.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.SIGIL_EQUIPED_CHECKBOX.Location = new System.Drawing.Point(175, 80);
+            this.SIGIL_EQUIPED_CHECKBOX.MaximumSize = new System.Drawing.Size(26, 26);
+            this.SIGIL_EQUIPED_CHECKBOX.MinimumSize = new System.Drawing.Size(26, 26);
+            this.SIGIL_EQUIPED_CHECKBOX.Name = "SIGIL_EQUIPED_CHECKBOX";
+            this.SIGIL_EQUIPED_CHECKBOX.Padding = new System.Windows.Forms.Padding(1);
+            this.SIGIL_EQUIPED_CHECKBOX.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.SIGIL_EQUIPED_CHECKBOX.Size = new System.Drawing.Size(26, 26);
+            this.SIGIL_EQUIPED_CHECKBOX.TabIndex = 24;
+            this.SIGIL_EQUIPED_CHECKBOX.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.SIGIL_EQUIPED_CHECKBOX.UseVisualStyleBackColor = true;
             // 
             // VALAKAS_EQUIPED_LABEL
             // 
@@ -375,6 +437,130 @@ namespace OriginalL2MagicDmgCalculator
             this.BUFFS_GROUP.Name = "BUFFS_GROUP";
             this.BUFFS_GROUP.Size = new System.Drawing.Size(572, 239);
             this.BUFFS_GROUP.TabIndex = 2;
+            // 
+            // BUFF_POWER_MTEXTBOX6
+            // 
+            this.BUFF_POWER_MTEXTBOX6.Culture = new System.Globalization.CultureInfo("en-US");
+            this.BUFF_POWER_MTEXTBOX6.Location = new System.Drawing.Point(496, 182);
+            this.BUFF_POWER_MTEXTBOX6.Mask = "000";
+            this.BUFF_POWER_MTEXTBOX6.Name = "BUFF_POWER_MTEXTBOX6";
+            this.BUFF_POWER_MTEXTBOX6.Size = new System.Drawing.Size(50, 26);
+            this.BUFF_POWER_MTEXTBOX6.TabIndex = 35;
+            // 
+            // BUFF_POWER_MTEXTBOX5
+            // 
+            this.BUFF_POWER_MTEXTBOX5.Culture = new System.Globalization.CultureInfo("en-US");
+            this.BUFF_POWER_MTEXTBOX5.Location = new System.Drawing.Point(496, 152);
+            this.BUFF_POWER_MTEXTBOX5.Mask = "000";
+            this.BUFF_POWER_MTEXTBOX5.Name = "BUFF_POWER_MTEXTBOX5";
+            this.BUFF_POWER_MTEXTBOX5.Size = new System.Drawing.Size(50, 26);
+            this.BUFF_POWER_MTEXTBOX5.TabIndex = 34;
+            this.BUFF_POWER_MTEXTBOX5.Text = " 30";
+            // 
+            // BUFF_POWER_MTEXTBOX4
+            // 
+            this.BUFF_POWER_MTEXTBOX4.Culture = new System.Globalization.CultureInfo("en-US");
+            this.BUFF_POWER_MTEXTBOX4.Location = new System.Drawing.Point(496, 122);
+            this.BUFF_POWER_MTEXTBOX4.Mask = "000";
+            this.BUFF_POWER_MTEXTBOX4.Name = "BUFF_POWER_MTEXTBOX4";
+            this.BUFF_POWER_MTEXTBOX4.Size = new System.Drawing.Size(50, 26);
+            this.BUFF_POWER_MTEXTBOX4.TabIndex = 33;
+            this.BUFF_POWER_MTEXTBOX4.Text = " 20";
+            // 
+            // BUFF_POWER_MTEXTBOX3
+            // 
+            this.BUFF_POWER_MTEXTBOX3.Culture = new System.Globalization.CultureInfo("en-US");
+            this.BUFF_POWER_MTEXTBOX3.Location = new System.Drawing.Point(496, 92);
+            this.BUFF_POWER_MTEXTBOX3.Mask = "000";
+            this.BUFF_POWER_MTEXTBOX3.Name = "BUFF_POWER_MTEXTBOX3";
+            this.BUFF_POWER_MTEXTBOX3.Size = new System.Drawing.Size(50, 26);
+            this.BUFF_POWER_MTEXTBOX3.TabIndex = 32;
+            this.BUFF_POWER_MTEXTBOX3.Text = " 20";
+            // 
+            // BUFF_POWER_MTEXTBOX2
+            // 
+            this.BUFF_POWER_MTEXTBOX2.Culture = new System.Globalization.CultureInfo("en-US");
+            this.BUFF_POWER_MTEXTBOX2.Location = new System.Drawing.Point(496, 62);
+            this.BUFF_POWER_MTEXTBOX2.Mask = "000";
+            this.BUFF_POWER_MTEXTBOX2.Name = "BUFF_POWER_MTEXTBOX2";
+            this.BUFF_POWER_MTEXTBOX2.Size = new System.Drawing.Size(50, 26);
+            this.BUFF_POWER_MTEXTBOX2.TabIndex = 31;
+            this.BUFF_POWER_MTEXTBOX2.Text = " 16";
+            // 
+            // BUFF_POWER_MTEXTBOX1
+            // 
+            this.BUFF_POWER_MTEXTBOX1.Culture = new System.Globalization.CultureInfo("en-US");
+            this.BUFF_POWER_MTEXTBOX1.Location = new System.Drawing.Point(496, 32);
+            this.BUFF_POWER_MTEXTBOX1.Mask = "000";
+            this.BUFF_POWER_MTEXTBOX1.Name = "BUFF_POWER_MTEXTBOX1";
+            this.BUFF_POWER_MTEXTBOX1.Size = new System.Drawing.Size(50, 26);
+            this.BUFF_POWER_MTEXTBOX1.TabIndex = 20;
+            this.BUFF_POWER_MTEXTBOX1.Text = " 75";
+            // 
+            // HERO_BERS_MTEXTBOX
+            // 
+            this.HERO_BERS_MTEXTBOX.Culture = new System.Globalization.CultureInfo("en-US");
+            this.HERO_BERS_MTEXTBOX.Location = new System.Drawing.Point(236, 212);
+            this.HERO_BERS_MTEXTBOX.Mask = "00000";
+            this.HERO_BERS_MTEXTBOX.Name = "HERO_BERS_MTEXTBOX";
+            this.HERO_BERS_MTEXTBOX.Size = new System.Drawing.Size(102, 26);
+            this.HERO_BERS_MTEXTBOX.TabIndex = 24;
+            this.HERO_BERS_MTEXTBOX.Text = "  500";
+            // 
+            // BUFF_NAME_TEXBOX6
+            // 
+            this.BUFF_NAME_TEXBOX6.Location = new System.Drawing.Point(152, 182);
+            this.BUFF_NAME_TEXBOX6.MaxLength = 30;
+            this.BUFF_NAME_TEXBOX6.Name = "BUFF_NAME_TEXBOX6";
+            this.BUFF_NAME_TEXBOX6.Size = new System.Drawing.Size(186, 26);
+            this.BUFF_NAME_TEXBOX6.TabIndex = 30;
+            // 
+            // BUFF_NAME_TEXBOX5
+            // 
+            this.BUFF_NAME_TEXBOX5.Location = new System.Drawing.Point(152, 152);
+            this.BUFF_NAME_TEXBOX5.MaxLength = 30;
+            this.BUFF_NAME_TEXBOX5.Name = "BUFF_NAME_TEXBOX5";
+            this.BUFF_NAME_TEXBOX5.Size = new System.Drawing.Size(186, 26);
+            this.BUFF_NAME_TEXBOX5.TabIndex = 29;
+            // 
+            // BUFF_NAME_TEXBOX4
+            // 
+            this.BUFF_NAME_TEXBOX4.Location = new System.Drawing.Point(152, 122);
+            this.BUFF_NAME_TEXBOX4.MaxLength = 30;
+            this.BUFF_NAME_TEXBOX4.Name = "BUFF_NAME_TEXBOX4";
+            this.BUFF_NAME_TEXBOX4.Size = new System.Drawing.Size(186, 26);
+            this.BUFF_NAME_TEXBOX4.TabIndex = 28;
+            // 
+            // BUFF_NAME_TEXBOX3
+            // 
+            this.BUFF_NAME_TEXBOX3.Location = new System.Drawing.Point(152, 92);
+            this.BUFF_NAME_TEXBOX3.MaxLength = 30;
+            this.BUFF_NAME_TEXBOX3.Name = "BUFF_NAME_TEXBOX3";
+            this.BUFF_NAME_TEXBOX3.Size = new System.Drawing.Size(186, 26);
+            this.BUFF_NAME_TEXBOX3.TabIndex = 27;
+            // 
+            // BUFF_NAME_TEXBOX2
+            // 
+            this.BUFF_NAME_TEXBOX2.Location = new System.Drawing.Point(152, 62);
+            this.BUFF_NAME_TEXBOX2.MaxLength = 30;
+            this.BUFF_NAME_TEXBOX2.Name = "BUFF_NAME_TEXBOX2";
+            this.BUFF_NAME_TEXBOX2.Size = new System.Drawing.Size(186, 26);
+            this.BUFF_NAME_TEXBOX2.TabIndex = 26;
+            // 
+            // BUFF_NAME_TEXBOX1
+            // 
+            this.BUFF_NAME_TEXBOX1.Location = new System.Drawing.Point(152, 32);
+            this.BUFF_NAME_TEXBOX1.MaxLength = 30;
+            this.BUFF_NAME_TEXBOX1.Name = "BUFF_NAME_TEXBOX1";
+            this.BUFF_NAME_TEXBOX1.Size = new System.Drawing.Size(186, 26);
+            this.BUFF_NAME_TEXBOX1.TabIndex = 25;
+            // 
+            // vScrollBar3
+            // 
+            this.vScrollBar3.Location = new System.Drawing.Point(552, 0);
+            this.vScrollBar3.Name = "vScrollBar3";
+            this.vScrollBar3.Size = new System.Drawing.Size(20, 239);
+            this.vScrollBar3.TabIndex = 24;
             // 
             // HERO_BERS_LABEL
             // 
@@ -527,6 +713,86 @@ namespace OriginalL2MagicDmgCalculator
             this.SKILLS_GROUP.Size = new System.Drawing.Size(580, 198);
             this.SKILLS_GROUP.TabIndex = 3;
             // 
+            // NUKE_ELE_ALIGN_CHECKBOX
+            // 
+            this.NUKE_ELE_ALIGN_CHECKBOX.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.NUKE_ELE_ALIGN_CHECKBOX.CheckAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.NUKE_ELE_ALIGN_CHECKBOX.Checked = true;
+            this.NUKE_ELE_ALIGN_CHECKBOX.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.NUKE_ELE_ALIGN_CHECKBOX.Location = new System.Drawing.Point(528, 79);
+            this.NUKE_ELE_ALIGN_CHECKBOX.MaximumSize = new System.Drawing.Size(26, 26);
+            this.NUKE_ELE_ALIGN_CHECKBOX.MinimumSize = new System.Drawing.Size(26, 26);
+            this.NUKE_ELE_ALIGN_CHECKBOX.Name = "NUKE_ELE_ALIGN_CHECKBOX";
+            this.NUKE_ELE_ALIGN_CHECKBOX.Padding = new System.Windows.Forms.Padding(1);
+            this.NUKE_ELE_ALIGN_CHECKBOX.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.NUKE_ELE_ALIGN_CHECKBOX.Size = new System.Drawing.Size(26, 26);
+            this.NUKE_ELE_ALIGN_CHECKBOX.TabIndex = 23;
+            this.NUKE_ELE_ALIGN_CHECKBOX.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.NUKE_ELE_ALIGN_CHECKBOX.UseVisualStyleBackColor = true;
+            // 
+            // NUKE_ENCHANT_POWER_MTEXTBOX
+            // 
+            this.NUKE_ENCHANT_POWER_MTEXTBOX.Culture = new System.Globalization.CultureInfo("en-US");
+            this.NUKE_ENCHANT_POWER_MTEXTBOX.Location = new System.Drawing.Point(460, 120);
+            this.NUKE_ENCHANT_POWER_MTEXTBOX.Mask = "00";
+            this.NUKE_ENCHANT_POWER_MTEXTBOX.Name = "NUKE_ENCHANT_POWER_MTEXTBOX";
+            this.NUKE_ENCHANT_POWER_MTEXTBOX.Size = new System.Drawing.Size(50, 26);
+            this.NUKE_ENCHANT_POWER_MTEXTBOX.TabIndex = 22;
+            this.NUKE_ENCHANT_POWER_MTEXTBOX.Text = " 0";
+            // 
+            // NUKE_ENCHANT_TYPE_TEXTBOX
+            // 
+            this.NUKE_ENCHANT_TYPE_TEXTBOX.Location = new System.Drawing.Point(195, 160);
+            this.NUKE_ENCHANT_TYPE_TEXTBOX.MaxLength = 30;
+            this.NUKE_ENCHANT_TYPE_TEXTBOX.Name = "NUKE_ENCHANT_TYPE_TEXTBOX";
+            this.NUKE_ENCHANT_TYPE_TEXTBOX.Size = new System.Drawing.Size(315, 26);
+            this.NUKE_ENCHANT_TYPE_TEXTBOX.TabIndex = 20;
+            // 
+            // WEAPON_MASTERY_LV_MTEXTBOX
+            // 
+            this.WEAPON_MASTERY_LV_MTEXTBOX.Culture = new System.Globalization.CultureInfo("en-US");
+            this.WEAPON_MASTERY_LV_MTEXTBOX.Location = new System.Drawing.Point(460, 40);
+            this.WEAPON_MASTERY_LV_MTEXTBOX.Mask = "00";
+            this.WEAPON_MASTERY_LV_MTEXTBOX.Name = "WEAPON_MASTERY_LV_MTEXTBOX";
+            this.WEAPON_MASTERY_LV_MTEXTBOX.Size = new System.Drawing.Size(50, 26);
+            this.WEAPON_MASTERY_LV_MTEXTBOX.TabIndex = 21;
+            this.WEAPON_MASTERY_LV_MTEXTBOX.Text = "09";
+            // 
+            // NUKE_POWER_MTEXTBOX
+            // 
+            this.NUKE_POWER_MTEXTBOX.Culture = new System.Globalization.CultureInfo("en-US");
+            this.NUKE_POWER_MTEXTBOX.Location = new System.Drawing.Point(120, 120);
+            this.NUKE_POWER_MTEXTBOX.Mask = "0000";
+            this.NUKE_POWER_MTEXTBOX.Name = "NUKE_POWER_MTEXTBOX";
+            this.NUKE_POWER_MTEXTBOX.Size = new System.Drawing.Size(102, 26);
+            this.NUKE_POWER_MTEXTBOX.TabIndex = 20;
+            this.NUKE_POWER_MTEXTBOX.Text = " 150";
+            // 
+            // NUKE_LEVEL_MTEXTBOX
+            // 
+            this.NUKE_LEVEL_MTEXTBOX.Culture = new System.Globalization.CultureInfo("en-US");
+            this.NUKE_LEVEL_MTEXTBOX.Location = new System.Drawing.Point(120, 80);
+            this.NUKE_LEVEL_MTEXTBOX.Mask = "00";
+            this.NUKE_LEVEL_MTEXTBOX.Name = "NUKE_LEVEL_MTEXTBOX";
+            this.NUKE_LEVEL_MTEXTBOX.Size = new System.Drawing.Size(50, 26);
+            this.NUKE_LEVEL_MTEXTBOX.TabIndex = 20;
+            this.NUKE_LEVEL_MTEXTBOX.Text = "09";
+            // 
+            // vScrollBar2
+            // 
+            this.vScrollBar2.Location = new System.Drawing.Point(560, 0);
+            this.vScrollBar2.Name = "vScrollBar2";
+            this.vScrollBar2.Size = new System.Drawing.Size(20, 198);
+            this.vScrollBar2.TabIndex = 20;
+            // 
+            // NUKTE_TYPE_TEXTBOX
+            // 
+            this.NUKTE_TYPE_TEXTBOX.Location = new System.Drawing.Point(120, 40);
+            this.NUKTE_TYPE_TEXTBOX.MaxLength = 30;
+            this.NUKTE_TYPE_TEXTBOX.Name = "NUKTE_TYPE_TEXTBOX";
+            this.NUKTE_TYPE_TEXTBOX.Size = new System.Drawing.Size(148, 26);
+            this.NUKTE_TYPE_TEXTBOX.TabIndex = 20;
+            // 
             // WEAPON_MASTERY_LEVEL_LABEL
             // 
             this.WEAPON_MASTERY_LEVEL_LABEL.AutoSize = true;
@@ -608,272 +874,6 @@ namespace OriginalL2MagicDmgCalculator
             this.TEST_BUTTON.Text = "TEST_BUTTON";
             this.TEST_BUTTON.UseVisualStyleBackColor = true;
             this.TEST_BUTTON.Click += new System.EventHandler(this.TEST_BUTTON_Click);
-            // 
-            // NUKTE_TYPE_TEXTBOX
-            // 
-            this.NUKTE_TYPE_TEXTBOX.Location = new System.Drawing.Point(120, 40);
-            this.NUKTE_TYPE_TEXTBOX.MaxLength = 30;
-            this.NUKTE_TYPE_TEXTBOX.Name = "NUKTE_TYPE_TEXTBOX";
-            this.NUKTE_TYPE_TEXTBOX.Size = new System.Drawing.Size(148, 26);
-            this.NUKTE_TYPE_TEXTBOX.TabIndex = 20;
-            // 
-            // vScrollBar2
-            // 
-            this.vScrollBar2.Location = new System.Drawing.Point(560, 0);
-            this.vScrollBar2.Name = "vScrollBar2";
-            this.vScrollBar2.Size = new System.Drawing.Size(20, 198);
-            this.vScrollBar2.TabIndex = 20;
-            // 
-            // NUKE_LEVEL_MTEXTBOX
-            // 
-            this.NUKE_LEVEL_MTEXTBOX.Culture = new System.Globalization.CultureInfo("en-US");
-            this.NUKE_LEVEL_MTEXTBOX.Location = new System.Drawing.Point(120, 80);
-            this.NUKE_LEVEL_MTEXTBOX.Mask = "00";
-            this.NUKE_LEVEL_MTEXTBOX.Name = "NUKE_LEVEL_MTEXTBOX";
-            this.NUKE_LEVEL_MTEXTBOX.Size = new System.Drawing.Size(50, 26);
-            this.NUKE_LEVEL_MTEXTBOX.TabIndex = 20;
-            this.NUKE_LEVEL_MTEXTBOX.Text = "09";
-            // 
-            // NUKE_POWER_MTEXTBOX
-            // 
-            this.NUKE_POWER_MTEXTBOX.Culture = new System.Globalization.CultureInfo("en-US");
-            this.NUKE_POWER_MTEXTBOX.Location = new System.Drawing.Point(120, 120);
-            this.NUKE_POWER_MTEXTBOX.Mask = "0000";
-            this.NUKE_POWER_MTEXTBOX.Name = "NUKE_POWER_MTEXTBOX";
-            this.NUKE_POWER_MTEXTBOX.Size = new System.Drawing.Size(102, 26);
-            this.NUKE_POWER_MTEXTBOX.TabIndex = 20;
-            this.NUKE_POWER_MTEXTBOX.Text = " 150";
-            // 
-            // WEAPON_MASTERY_LV_MTEXTBOX
-            // 
-            this.WEAPON_MASTERY_LV_MTEXTBOX.Culture = new System.Globalization.CultureInfo("en-US");
-            this.WEAPON_MASTERY_LV_MTEXTBOX.Location = new System.Drawing.Point(460, 40);
-            this.WEAPON_MASTERY_LV_MTEXTBOX.Mask = "00";
-            this.WEAPON_MASTERY_LV_MTEXTBOX.Name = "WEAPON_MASTERY_LV_MTEXTBOX";
-            this.WEAPON_MASTERY_LV_MTEXTBOX.Size = new System.Drawing.Size(50, 26);
-            this.WEAPON_MASTERY_LV_MTEXTBOX.TabIndex = 21;
-            this.WEAPON_MASTERY_LV_MTEXTBOX.Text = "09";
-            // 
-            // NUKE_ENCHANT_TYPE_TEXTBOX
-            // 
-            this.NUKE_ENCHANT_TYPE_TEXTBOX.Location = new System.Drawing.Point(195, 160);
-            this.NUKE_ENCHANT_TYPE_TEXTBOX.MaxLength = 30;
-            this.NUKE_ENCHANT_TYPE_TEXTBOX.Name = "NUKE_ENCHANT_TYPE_TEXTBOX";
-            this.NUKE_ENCHANT_TYPE_TEXTBOX.Size = new System.Drawing.Size(315, 26);
-            this.NUKE_ENCHANT_TYPE_TEXTBOX.TabIndex = 20;
-            // 
-            // NUKE_ENCHANT_POWER_MTEXTBOX
-            // 
-            this.NUKE_ENCHANT_POWER_MTEXTBOX.Culture = new System.Globalization.CultureInfo("en-US");
-            this.NUKE_ENCHANT_POWER_MTEXTBOX.Location = new System.Drawing.Point(460, 120);
-            this.NUKE_ENCHANT_POWER_MTEXTBOX.Mask = "00";
-            this.NUKE_ENCHANT_POWER_MTEXTBOX.Name = "NUKE_ENCHANT_POWER_MTEXTBOX";
-            this.NUKE_ENCHANT_POWER_MTEXTBOX.Size = new System.Drawing.Size(50, 26);
-            this.NUKE_ENCHANT_POWER_MTEXTBOX.TabIndex = 22;
-            this.NUKE_ENCHANT_POWER_MTEXTBOX.Text = " 0";
-            // 
-            // NUKE_ELE_ALIGN_CHECKBOX
-            // 
-            this.NUKE_ELE_ALIGN_CHECKBOX.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.NUKE_ELE_ALIGN_CHECKBOX.CheckAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.NUKE_ELE_ALIGN_CHECKBOX.Checked = true;
-            this.NUKE_ELE_ALIGN_CHECKBOX.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.NUKE_ELE_ALIGN_CHECKBOX.Location = new System.Drawing.Point(528, 79);
-            this.NUKE_ELE_ALIGN_CHECKBOX.MaximumSize = new System.Drawing.Size(26, 26);
-            this.NUKE_ELE_ALIGN_CHECKBOX.MinimumSize = new System.Drawing.Size(26, 26);
-            this.NUKE_ELE_ALIGN_CHECKBOX.Name = "NUKE_ELE_ALIGN_CHECKBOX";
-            this.NUKE_ELE_ALIGN_CHECKBOX.Padding = new System.Windows.Forms.Padding(1);
-            this.NUKE_ELE_ALIGN_CHECKBOX.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.NUKE_ELE_ALIGN_CHECKBOX.Size = new System.Drawing.Size(26, 26);
-            this.NUKE_ELE_ALIGN_CHECKBOX.TabIndex = 23;
-            this.NUKE_ELE_ALIGN_CHECKBOX.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.NUKE_ELE_ALIGN_CHECKBOX.UseVisualStyleBackColor = true;
-            // 
-            // vScrollBar3
-            // 
-            this.vScrollBar3.Location = new System.Drawing.Point(552, 0);
-            this.vScrollBar3.Name = "vScrollBar3";
-            this.vScrollBar3.Size = new System.Drawing.Size(20, 239);
-            this.vScrollBar3.TabIndex = 24;
-            // 
-            // BUFF_NAME_TEXBOX1
-            // 
-            this.BUFF_NAME_TEXBOX1.Location = new System.Drawing.Point(152, 32);
-            this.BUFF_NAME_TEXBOX1.MaxLength = 30;
-            this.BUFF_NAME_TEXBOX1.Name = "BUFF_NAME_TEXBOX1";
-            this.BUFF_NAME_TEXBOX1.Size = new System.Drawing.Size(186, 26);
-            this.BUFF_NAME_TEXBOX1.TabIndex = 25;
-            // 
-            // BUFF_NAME_TEXBOX2
-            // 
-            this.BUFF_NAME_TEXBOX2.Location = new System.Drawing.Point(152, 62);
-            this.BUFF_NAME_TEXBOX2.MaxLength = 30;
-            this.BUFF_NAME_TEXBOX2.Name = "BUFF_NAME_TEXBOX2";
-            this.BUFF_NAME_TEXBOX2.Size = new System.Drawing.Size(186, 26);
-            this.BUFF_NAME_TEXBOX2.TabIndex = 26;
-            // 
-            // BUFF_NAME_TEXBOX3
-            // 
-            this.BUFF_NAME_TEXBOX3.Location = new System.Drawing.Point(152, 92);
-            this.BUFF_NAME_TEXBOX3.MaxLength = 30;
-            this.BUFF_NAME_TEXBOX3.Name = "BUFF_NAME_TEXBOX3";
-            this.BUFF_NAME_TEXBOX3.Size = new System.Drawing.Size(186, 26);
-            this.BUFF_NAME_TEXBOX3.TabIndex = 27;
-            // 
-            // BUFF_NAME_TEXBOX4
-            // 
-            this.BUFF_NAME_TEXBOX4.Location = new System.Drawing.Point(152, 122);
-            this.BUFF_NAME_TEXBOX4.MaxLength = 30;
-            this.BUFF_NAME_TEXBOX4.Name = "BUFF_NAME_TEXBOX4";
-            this.BUFF_NAME_TEXBOX4.Size = new System.Drawing.Size(186, 26);
-            this.BUFF_NAME_TEXBOX4.TabIndex = 28;
-            // 
-            // BUFF_NAME_TEXBOX5
-            // 
-            this.BUFF_NAME_TEXBOX5.Location = new System.Drawing.Point(152, 152);
-            this.BUFF_NAME_TEXBOX5.MaxLength = 30;
-            this.BUFF_NAME_TEXBOX5.Name = "BUFF_NAME_TEXBOX5";
-            this.BUFF_NAME_TEXBOX5.Size = new System.Drawing.Size(186, 26);
-            this.BUFF_NAME_TEXBOX5.TabIndex = 29;
-            // 
-            // BUFF_NAME_TEXBOX6
-            // 
-            this.BUFF_NAME_TEXBOX6.Location = new System.Drawing.Point(152, 182);
-            this.BUFF_NAME_TEXBOX6.MaxLength = 30;
-            this.BUFF_NAME_TEXBOX6.Name = "BUFF_NAME_TEXBOX6";
-            this.BUFF_NAME_TEXBOX6.Size = new System.Drawing.Size(186, 26);
-            this.BUFF_NAME_TEXBOX6.TabIndex = 30;
-            // 
-            // HERO_BERS_MTEXTBOX
-            // 
-            this.HERO_BERS_MTEXTBOX.Culture = new System.Globalization.CultureInfo("en-US");
-            this.HERO_BERS_MTEXTBOX.Location = new System.Drawing.Point(236, 212);
-            this.HERO_BERS_MTEXTBOX.Mask = "00000";
-            this.HERO_BERS_MTEXTBOX.Name = "HERO_BERS_MTEXTBOX";
-            this.HERO_BERS_MTEXTBOX.Size = new System.Drawing.Size(102, 26);
-            this.HERO_BERS_MTEXTBOX.TabIndex = 24;
-            this.HERO_BERS_MTEXTBOX.Text = "  500";
-            // 
-            // BUFF_POWER_MTEXTBOX1
-            // 
-            this.BUFF_POWER_MTEXTBOX1.Culture = new System.Globalization.CultureInfo("en-US");
-            this.BUFF_POWER_MTEXTBOX1.Location = new System.Drawing.Point(496, 32);
-            this.BUFF_POWER_MTEXTBOX1.Mask = "000";
-            this.BUFF_POWER_MTEXTBOX1.Name = "BUFF_POWER_MTEXTBOX1";
-            this.BUFF_POWER_MTEXTBOX1.Size = new System.Drawing.Size(50, 26);
-            this.BUFF_POWER_MTEXTBOX1.TabIndex = 20;
-            this.BUFF_POWER_MTEXTBOX1.Text = " 75";
-            // 
-            // BUFF_POWER_MTEXTBOX2
-            // 
-            this.BUFF_POWER_MTEXTBOX2.Culture = new System.Globalization.CultureInfo("en-US");
-            this.BUFF_POWER_MTEXTBOX2.Location = new System.Drawing.Point(496, 62);
-            this.BUFF_POWER_MTEXTBOX2.Mask = "000";
-            this.BUFF_POWER_MTEXTBOX2.Name = "BUFF_POWER_MTEXTBOX2";
-            this.BUFF_POWER_MTEXTBOX2.Size = new System.Drawing.Size(50, 26);
-            this.BUFF_POWER_MTEXTBOX2.TabIndex = 31;
-            this.BUFF_POWER_MTEXTBOX2.Text = " 16";
-            // 
-            // BUFF_POWER_MTEXTBOX3
-            // 
-            this.BUFF_POWER_MTEXTBOX3.Culture = new System.Globalization.CultureInfo("en-US");
-            this.BUFF_POWER_MTEXTBOX3.Location = new System.Drawing.Point(496, 92);
-            this.BUFF_POWER_MTEXTBOX3.Mask = "000";
-            this.BUFF_POWER_MTEXTBOX3.Name = "BUFF_POWER_MTEXTBOX3";
-            this.BUFF_POWER_MTEXTBOX3.Size = new System.Drawing.Size(50, 26);
-            this.BUFF_POWER_MTEXTBOX3.TabIndex = 32;
-            this.BUFF_POWER_MTEXTBOX3.Text = " 20";
-            // 
-            // BUFF_POWER_MTEXTBOX4
-            // 
-            this.BUFF_POWER_MTEXTBOX4.Culture = new System.Globalization.CultureInfo("en-US");
-            this.BUFF_POWER_MTEXTBOX4.Location = new System.Drawing.Point(496, 122);
-            this.BUFF_POWER_MTEXTBOX4.Mask = "000";
-            this.BUFF_POWER_MTEXTBOX4.Name = "BUFF_POWER_MTEXTBOX4";
-            this.BUFF_POWER_MTEXTBOX4.Size = new System.Drawing.Size(50, 26);
-            this.BUFF_POWER_MTEXTBOX4.TabIndex = 33;
-            this.BUFF_POWER_MTEXTBOX4.Text = " 20";
-            // 
-            // BUFF_POWER_MTEXTBOX5
-            // 
-            this.BUFF_POWER_MTEXTBOX5.Culture = new System.Globalization.CultureInfo("en-US");
-            this.BUFF_POWER_MTEXTBOX5.Location = new System.Drawing.Point(496, 152);
-            this.BUFF_POWER_MTEXTBOX5.Mask = "000";
-            this.BUFF_POWER_MTEXTBOX5.Name = "BUFF_POWER_MTEXTBOX5";
-            this.BUFF_POWER_MTEXTBOX5.Size = new System.Drawing.Size(50, 26);
-            this.BUFF_POWER_MTEXTBOX5.TabIndex = 34;
-            this.BUFF_POWER_MTEXTBOX5.Text = " 30";
-            // 
-            // BUFF_POWER_MTEXTBOX6
-            // 
-            this.BUFF_POWER_MTEXTBOX6.Culture = new System.Globalization.CultureInfo("en-US");
-            this.BUFF_POWER_MTEXTBOX6.Location = new System.Drawing.Point(496, 182);
-            this.BUFF_POWER_MTEXTBOX6.Mask = "000";
-            this.BUFF_POWER_MTEXTBOX6.Name = "BUFF_POWER_MTEXTBOX6";
-            this.BUFF_POWER_MTEXTBOX6.Size = new System.Drawing.Size(50, 26);
-            this.BUFF_POWER_MTEXTBOX6.TabIndex = 35;
-            // 
-            // SIGIL_EQUIPED_CHECKBOX
-            // 
-            this.SIGIL_EQUIPED_CHECKBOX.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.SIGIL_EQUIPED_CHECKBOX.CheckAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.SIGIL_EQUIPED_CHECKBOX.Checked = true;
-            this.SIGIL_EQUIPED_CHECKBOX.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.SIGIL_EQUIPED_CHECKBOX.Location = new System.Drawing.Point(175, 80);
-            this.SIGIL_EQUIPED_CHECKBOX.MaximumSize = new System.Drawing.Size(26, 26);
-            this.SIGIL_EQUIPED_CHECKBOX.MinimumSize = new System.Drawing.Size(26, 26);
-            this.SIGIL_EQUIPED_CHECKBOX.Name = "SIGIL_EQUIPED_CHECKBOX";
-            this.SIGIL_EQUIPED_CHECKBOX.Padding = new System.Windows.Forms.Padding(1);
-            this.SIGIL_EQUIPED_CHECKBOX.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.SIGIL_EQUIPED_CHECKBOX.Size = new System.Drawing.Size(26, 26);
-            this.SIGIL_EQUIPED_CHECKBOX.TabIndex = 24;
-            this.SIGIL_EQUIPED_CHECKBOX.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.SIGIL_EQUIPED_CHECKBOX.UseVisualStyleBackColor = true;
-            // 
-            // VALAKAS_EQUIPED_CHECKBOX
-            // 
-            this.VALAKAS_EQUIPED_CHECKBOX.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.VALAKAS_EQUIPED_CHECKBOX.CheckAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.VALAKAS_EQUIPED_CHECKBOX.Checked = true;
-            this.VALAKAS_EQUIPED_CHECKBOX.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.VALAKAS_EQUIPED_CHECKBOX.Location = new System.Drawing.Point(175, 120);
-            this.VALAKAS_EQUIPED_CHECKBOX.MaximumSize = new System.Drawing.Size(26, 26);
-            this.VALAKAS_EQUIPED_CHECKBOX.MinimumSize = new System.Drawing.Size(26, 26);
-            this.VALAKAS_EQUIPED_CHECKBOX.Name = "VALAKAS_EQUIPED_CHECKBOX";
-            this.VALAKAS_EQUIPED_CHECKBOX.Padding = new System.Windows.Forms.Padding(1);
-            this.VALAKAS_EQUIPED_CHECKBOX.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.VALAKAS_EQUIPED_CHECKBOX.Size = new System.Drawing.Size(26, 26);
-            this.VALAKAS_EQUIPED_CHECKBOX.TabIndex = 25;
-            this.VALAKAS_EQUIPED_CHECKBOX.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.VALAKAS_EQUIPED_CHECKBOX.UseVisualStyleBackColor = true;
-            // 
-            // WEAPON_MATAK_MTEXTBOX
-            // 
-            this.WEAPON_MATAK_MTEXTBOX.Culture = new System.Globalization.CultureInfo("en-US");
-            this.WEAPON_MATAK_MTEXTBOX.Location = new System.Drawing.Point(175, 40);
-            this.WEAPON_MATAK_MTEXTBOX.Mask = "000000";
-            this.WEAPON_MATAK_MTEXTBOX.Name = "WEAPON_MATAK_MTEXTBOX";
-            this.WEAPON_MATAK_MTEXTBOX.Size = new System.Drawing.Size(102, 26);
-            this.WEAPON_MATAK_MTEXTBOX.TabIndex = 20;
-            this.WEAPON_MATAK_MTEXTBOX.Text = "2000";
-            // 
-            // AUGMENT_BOOST_LABEL
-            // 
-            this.AUGMENT_BOOST_LABEL.AutoSize = true;
-            this.AUGMENT_BOOST_LABEL.Location = new System.Drawing.Point(11, 160);
-            this.AUGMENT_BOOST_LABEL.Name = "AUGMENT_BOOST_LABEL";
-            this.AUGMENT_BOOST_LABEL.Size = new System.Drawing.Size(155, 20);
-            this.AUGMENT_BOOST_LABEL.TabIndex = 26;
-            this.AUGMENT_BOOST_LABEL.Text = "Augmentation Boost";
-            // 
-            // maskedTextBox1
-            // 
-            this.maskedTextBox1.Culture = new System.Globalization.CultureInfo("en-US");
-            this.maskedTextBox1.Location = new System.Drawing.Point(175, 160);
-            this.maskedTextBox1.Mask = "0000";
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(102, 26);
-            this.maskedTextBox1.TabIndex = 24;
             // 
             // DEALT_DAMAGE_MTEXTBOX
             // 
@@ -1012,7 +1012,7 @@ namespace OriginalL2MagicDmgCalculator
         private System.Windows.Forms.MaskedTextBox WEAPON_MATAK_MTEXTBOX;
         private System.Windows.Forms.CheckBox VALAKAS_EQUIPED_CHECKBOX;
         private System.Windows.Forms.CheckBox SIGIL_EQUIPED_CHECKBOX;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
+        private System.Windows.Forms.MaskedTextBox AUGMENTATION_BOOST_MTEXTBOX;
         private System.Windows.Forms.Label AUGMENT_BOOST_LABEL;
         private System.Windows.Forms.MaskedTextBox DEALT_DAMAGE_MTEXTBOX;
         private System.Windows.Forms.Label DEALT_DAMAGE_LABEL;
